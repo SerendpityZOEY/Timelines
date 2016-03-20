@@ -1,4 +1,4 @@
-@(things: Array[String])
+@(things: ArrayList[Post])
 
 @main_jnet {
 
@@ -30,7 +30,7 @@
         <div class="feed-group">
             @for(item <- 0 until things.size){
 
-            <ul>
+
 
                 <!--<div style=" background-color: #ccffcc ;";><li>@things(item)</li></div>-->
 
@@ -46,10 +46,6 @@
                         </div>
                     </div>
                 </div>
-
-
-            </ul>
-
 
             }
         </div>
