@@ -2,6 +2,8 @@ package controllers;
 
 
 import play.mvc.*;
+import models.*;
+import java.util.ArrayList;
 
 public class Timelines extends Controller {
 
@@ -17,11 +19,10 @@ public class Timelines extends Controller {
 //                400, 500, 600,
 //                700, 800, 900, 1000
 //        };
+        Post p = new Post();
+        ArrayList<Post> posts = p.getPosts();
 
-        String[] anArray = {
-                models.Post.getPost()
-        };
-        return ok(views.html.index_jnet.render(anArray));
+        return ok(views.html.index_jnet.render(posts));
 
     }
 

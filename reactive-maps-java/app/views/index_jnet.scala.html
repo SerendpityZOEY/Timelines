@@ -1,4 +1,4 @@
-@(things: Array[String])
+@(things: ArrayList[Post])
 
 @main_jnet {
 
@@ -29,16 +29,16 @@
         </form>
         <div class="feed-group">
             @for(item <- 0 until things.size){
-            @if(item % 3 == 0){
-            <ul>
-                }
+            <!--@if(item % 3 == 0){-->
+            <!--<ul>-->
+                <!--}-->
 
                 <div style=" background-color: #ccffcc ;";><li>@things(item)</li></div>
 
 
-                @if(item % 3 == 2 || item == (things.size - 1)){
-            </ul>
-            }
+                <!--@if(item % 3 == 2 || item == (things.size - 1)){-->
+            <!--</ul>-->
+            <!--}-->
             }
         </div>
         <button class="btn btn-primary" data-bind="click: submitEmail">Connect</button>
