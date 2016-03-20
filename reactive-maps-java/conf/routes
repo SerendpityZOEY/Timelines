@@ -5,6 +5,9 @@
 # Home page
 GET        /                    controllers.Application.index
 
+# Test app page
+GET        /app                 controllers.Timelines.index()
+
 # The websocket
 GET        /stream/:email       controllers.Application.stream(email)
 
