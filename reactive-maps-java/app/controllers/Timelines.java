@@ -21,6 +21,7 @@ public class Timelines extends Controller {
         String[] anArray = {
                 models.Post.getPost()
         };
+
         return ok(views.html.index_jnet.render(anArray));
 
     }
