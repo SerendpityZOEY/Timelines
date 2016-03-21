@@ -1,12 +1,5 @@
 package models;
 
-<<<<<<< HEAD
-public class Post
-{
-
-    public static String getPost()
-=======
-
 import java.util.HashMap;
 import java.util.ArrayList;
 
@@ -36,7 +29,6 @@ public class Post
         pl.add(post);
         pl.add(post);
         pl.add(post);
-
         return pl;
     }
 }

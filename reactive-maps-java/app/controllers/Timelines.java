@@ -22,13 +22,11 @@ public class Timelines extends Controller {
         Post p = new Post();
         ArrayList<Post> posts = p.getPosts();
 
-        String[] anArray = {
-                models.Post.getPost()
-        };
+//        String[] anArray = {
+//                models.Post.getPost()
+//        };
 
-        return ok(views.html.index_jnet.render(anArray));
-
-
+        return ok(views.html.index_jnet.render(posts));
     }
 
 
