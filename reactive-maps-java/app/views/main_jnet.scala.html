@@ -1,0 +1,34 @@
+@(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Timelines Application</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+        <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("lib/bootstrap/css/bootstrap.css")"/>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("lib/bootstrap/css/bootstrap-theme.css")"/>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")"/>
+    <link rel="stylesheet" href="@routes.Assets.at("lib/leaflet/leaflet.css")" />
+
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script data-main="@routes.Assets.at("javascripts/main.js")" type="text/javascript" src="@routes.Assets.at("lib/requirejs/require.js")"></script>
+    </head>
+    <body>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+        @content
+    </body>
+</html>
