@@ -15,7 +15,7 @@ public class Post
         return "This is a sample post.";
     }
 
-    public Post(String author, String text){
+    public Post(){
         this.author = getAuthor();
         this.text = getText();
     }

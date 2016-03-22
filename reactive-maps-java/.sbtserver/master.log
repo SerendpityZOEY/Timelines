@@ -11274,3 +11274,357 @@ Copy resource mappings:
 Total time: 1 s, completed Mar 22, 2016 2:31:32 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2f56ef68, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/app/models/Post.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/app/models/Post.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/app/models/Post.java)
+
+Read from stdout: Compiling 1 Java source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Java source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@17b5312a directly...
+Java compilation took 0.060149997 s
+Java analysis took 0.004638578 s
+Java compile + analysis took 0.069949128 s
+Invalidating /home/yue/Timelines/reactive-maps-java/app/models/Post.java...
+Invalidating (transitively) by inheritance from /home/yue/Timelines/reactive-maps-java/app/models/Post.java...
+Initial set of included nodes: Set(/home/yue/Timelines/reactive-maps-java/app/models/Post.java)
+Invalidated by transitive inheritance dependency: Set(/home/yue/Timelines/reactive-maps-java/app/models/Post.java)
+The /home/yue/Timelines/reactive-maps-java/app/models/Post.java source file has the following regular definitions changed:
+	<init>.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /home/yue/Timelines/reactive-maps-java/app/models/Post.java
+The following modified names cause invalidation of /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala: Set(<init>)
+Name hashing optimization doesn't apply to non-Scala dependency: /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java
+New invalidations:
+	Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala, /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java)
+Initial set of included nodes: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala, /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java)
+Including /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_routing.scala by /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_routing.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/main.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /home/yue/Timelines/reactive-maps-java/app/controllers/Application.java by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index.template.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/main_jnet.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/controllers/routes.java by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala, /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java)
+Read from stdout: Compiling 1 Scala source and 1 Java source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source and 1 Java source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 6f2c75fd, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.639269285 s
+Attempting to call com.sun.tools.javac.api.JavacTool@17b5312a directly...
+Read from stdout: /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java:16: constructor Post in class models.Post cannot be applied to given types;
+Read from stdout: required: no arguments
+Read from stdout: found: java.lang.String,java.lang.String
+Read from stdout: reason: actual and formal argument lists differ in length
+/home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java:16: constructor Post in class models.Post cannot be applied to given types;
+  required: no arguments
+  found: java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+Read from stdout: new Post("a","b")
+new Post("a","b")
+Read from stdout: /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java:17: constructor Post in class models.Post cannot be applied to given types;
+Read from stdout: required: no arguments
+Read from stdout: found: java.lang.String,java.lang.String
+Read from stdout: reason: actual and formal argument lists differ in length
+/home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java:17: constructor Post in class models.Post cannot be applied to given types;
+  required: no arguments
+  found: java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+Read from stdout: new Post("a","b")
+new Post("a","b")
+Read from stdout: /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java:18: constructor Post in class models.Post cannot be applied to given types;
+Read from stdout: required: no arguments
+Read from stdout: found: java.lang.String,java.lang.String
+Read from stdout: reason: actual and formal argument lists differ in length
+/home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java:18: constructor Post in class models.Post cannot be applied to given types;
+  required: no arguments
+  found: java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+Read from stdout: new Post("a","b")
+new Post("a","b")
+Read from stdout: /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java:19: constructor Post in class models.Post cannot be applied to given types;
+Read from stdout: required: no arguments
+Read from stdout: found: java.lang.String,java.lang.String
+Read from stdout: reason: actual and formal argument lists differ in length
+/home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java:19: constructor Post in class models.Post cannot be applied to given types;
+  required: no arguments
+  found: java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+Read from stdout: new Post("a","b")
+new Post("a","b")
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed Mar 22, 2016 2:33:30 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@607d3a3b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java, /home/yue/Timelines/reactive-maps-java/app/models/Post.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java, /home/yue/Timelines/reactive-maps-java/app/models/Post.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java, /home/yue/Timelines/reactive-maps-java/app/models/Post.java)
+
+Read from stdout: Compiling 2 Java sources to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 2 Java sources to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5e67a60a directly...
+Java compilation took 0.036578541 s
+Java analysis took 0.037346503 s
+Java compile + analysis took 0.077941552 s
+Invalidating /home/yue/Timelines/reactive-maps-java/app/models/Post.java...
+Invalidating (transitively) by inheritance from /home/yue/Timelines/reactive-maps-java/app/models/Post.java...
+Initial set of included nodes: Set(/home/yue/Timelines/reactive-maps-java/app/models/Post.java)
+Invalidated by transitive inheritance dependency: Set(/home/yue/Timelines/reactive-maps-java/app/models/Post.java)
+The /home/yue/Timelines/reactive-maps-java/app/models/Post.java source file has the following regular definitions changed:
+	<init>.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /home/yue/Timelines/reactive-maps-java/app/models/Post.java
+Name hashing optimization doesn't apply to non-Scala dependency: /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java
+The following modified names cause invalidation of /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala: Set(<init>)
+New invalidations:
+	Set(/home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java, /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala)
+Initial set of included nodes: Set(/home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java, /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala)
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_routing.scala by /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_routing.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/main.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /home/yue/Timelines/reactive-maps-java/app/controllers/Application.java by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index.template.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/main_jnet.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/main_jnet.template.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/controllers/routes.java by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala)
+Read from stdout: Compiling 1 Scala source and 1 Java source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source and 1 Java source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 68e9d26c, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.657667671 s
+Attempting to call com.sun.tools.javac.api.JavacTool@5e67a60a directly...
+Java compilation took 0.026846504 s
+Java analysis took 0.030251339 s
+Java compile + analysis took 0.059874501 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Mar 22, 2016 2:33:51 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 41
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ff0767e, check cycles: false
+Total time: 0 s, completed Mar 22, 2016 2:33:51 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c596462, check cycles: false
+Total time: 0 s, completed Mar 22, 2016 2:33:52 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@22fabd8a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'org.scalatest.tools.Framework' not present.
+Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
+Subclass fingerprints: List((junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@673d4b7e), (org.specs2.specification.SpecificationStructure,true,specs2 Specification fingerprint), (org.specs2.specification.SpecificationStructure,false,specs2 Specification fingerprint), (org.specs2.runner.FilesRunner,true,specs2 Specification files fingerprint), (org.specs2.runner.FilesRunner,false,specs2 Specification files fingerprint))
+Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@242165cb), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@3414aa4d))
+Forking tests - parallelism = false
+Read from stdout: Map
+Map
+Read from stdout: + should create a tile layer
+  + should create a tile layer
+Read from stdout: + should initialise the map view
+  + should initialise the map view
+Read from stdout: + should initialise the map view to the last stored area
+  + should initialise the map view to the last stored area
+Read from stdout: + should create new markers for features
+  + should create new markers for features
+Read from stdout: + should update existing markers for features
+  + should update existing markers for features
+Read from stdout: Marker
+Marker
+Read from stdout: + should create a single marker
+  + should create a single marker
+Read from stdout: + should create a cluster marker
+  + should create a cluster marker
+Read from stdout: + should add it to the map
+  + should add it to the map
+Read from stdout: + should update the position
+  + should update the position
+Read from stdout: + should update the cluster count
+  + should update the cluster count
+Summary for JUnit not available.
+Summary for specs2 not available.
+Read from stdout: Passed: Total 10, Failed 0, Errors 0, Passed 10
+Passed: Total 10, Failed 0, Errors 0, Passed 10
+Passed tests:
+	javascripts/map/MarkerSpec.js
+	javascripts/map/MapSpec.js
+Total time: 2 s, completed Mar 22, 2016 2:33:54 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@3136b220, check cycles: false
+Total time: 0 s, completed Mar 22, 2016 2:33:57 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@499212df, check cycles: false
+Total time: 0 s, completed Mar 22, 2016 2:33:58 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4a66ccc4, check cycles: false
+Exception in thread "Thread-163" java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:283)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at sbt.BasicIO$$anonfun$processFully$1$$anonfun$apply$8.apply(ProcessImpl.scala:58)
+	at sbt.BasicIO$$anonfun$processFully$1$$anonfun$apply$8.apply(ProcessImpl.scala:58)
+	at sbt.BasicIO$.readFully$1(ProcessImpl.scala:63)
+	at sbt.BasicIO$.processLinesFully(ProcessImpl.scala:69)
+	at sbt.BasicIO$$anonfun$processFully$1.apply(ProcessImpl.scala:58)
+	at sbt.BasicIO$$anonfun$processFully$1.apply(ProcessImpl.scala:55)
+	at play.sbt.forkrun.PlayForkProcess$$anonfun$2.apply$mcV$sp(PlayForkProcess.scala:47)
+	at play.sbt.forkrun.PlayForkProcess$$anon$1.run(PlayForkProcess.scala:120)
+	at java.lang.Thread.run(Thread.java:745)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 22, 2016 2:34:02 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
