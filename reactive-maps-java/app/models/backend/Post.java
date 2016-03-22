@@ -1,10 +1,24 @@
 package models;
 
-import java.util.HashMap;
 import java.util.ArrayList;
 
 public class Post
 {
+    private String author, text;
+
+    public String getAuthor(){
+        return "Jane Doe";
+    }
+
+    public String getText(){
+        return "This is a sample post.";
+    }
+
+    public Post(){
+        author = getAuthor();
+        text = getText();
+    }
+    /*
     public String author;
     public String text;
 
@@ -14,14 +28,15 @@ public class Post
         text = retrieveText();
     }
 
-    private String retrieveAuthor()
+    public String retrieveAuthor()
     {
         return "Sample Author";
     }
-    private String retrieveText()
+    public String retrieveText()
     {
         return "This is a sample post";
     }
+
     public static ArrayList<Post> getPosts()
     {
         ArrayList<Post> pl = new ArrayList<Post>();
@@ -31,4 +46,5 @@ public class Post
         pl.add(post);
         return pl;
     }
+    */
 }

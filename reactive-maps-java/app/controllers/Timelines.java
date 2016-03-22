@@ -12,6 +12,13 @@ public class Timelines extends Controller {
      */
     public static Result index()
     {
+        ArrayList<Post> posts = new ArrayList<Post>();
+        Post p = new Post();
+        posts.add(p);
+        posts.add(p);
+        posts.add(p);
+
+        /*
 //        return ok(views.html.index_jnet.render());
 //
 //        int[] anArray = {
@@ -25,7 +32,7 @@ public class Timelines extends Controller {
 //        String[] anArray = {
 //                models.Post.getPost()
 //        };
-
+*/
         return ok(views.html.index_jnet.render(posts));
     }
 
