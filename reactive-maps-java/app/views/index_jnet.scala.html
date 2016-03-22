@@ -85,13 +85,12 @@
         -->
         <div class="feed-group">
             <div class="row">
-                @for(item <- 0 until things.size){
-                        <!--<div style=" background-color: #ccffcc ;";><li>@things(item)</li></div>-->
+                @for(item <- things){
                     <div class="col s4">
                         <div class="card light-blue lighten-4">
                             <div class="card-content white-text">
-                                <span class="card-title">Card Title</span>
-                                <p>@things(item)</p>
+                                <span class="card-title">@item.author</span>
+                                <p>@item.text</p>
                             </div>
                             <div class="card-action">
                                 <i class="material-icons">favorite</i>

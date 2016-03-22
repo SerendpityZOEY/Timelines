@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class Post
 {
-    private String author, text;
+    public String author;
+    public String text;
 
     public String getAuthor(){
         return "Jane Doe";
@@ -14,9 +15,9 @@ public class Post
         return "This is a sample post.";
     }
 
-    public Post(){
-        author = getAuthor();
-        text = getText();
+    public Post(String author, String text){
+        this.author = getAuthor();
+        this.text = getText();
     }
     /*
     public String author;

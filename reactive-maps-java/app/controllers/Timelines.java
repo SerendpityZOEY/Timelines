@@ -13,10 +13,10 @@ public class Timelines extends Controller {
     public static Result index()
     {
         ArrayList<Post> posts = new ArrayList<Post>();
-        Post p = new Post();
-        posts.add(p);
-        posts.add(p);
-        posts.add(p);
+        Post p = new Post("a","b");
+        posts.add(new Post("a","b"));
+        posts.add(new Post("a","b"));
+        posts.add(new Post("a","b"));
 
         /*
 //        return ok(views.html.index_jnet.render());
