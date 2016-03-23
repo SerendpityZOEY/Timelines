@@ -1,0 +1,62 @@
+@(thing:String)
+
+@main_jnet{
+    <nav>
+        <div class="nav-wrapper deep-purple">
+            <div class="row">
+                <div class="col s10 push-s1">
+                    <a href="#!" class="brand-logo">Timelines</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#"><i class="material-icons left">search</i>Link with Left Icon</a></li>
+
+                        <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
+                        <li><a href="#"><i class="material-icons">border_color</i></a></li>
+                        <li><a href="#"><i class="material-icons">format_list_bulleted</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="http://www.drodd.com/images11/twitter-backgrounds10.jpg"></div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs" id="Tag">
+                <li class="tab col s3"><a href="#feed"><font color="#1e90ff">Feed</font></a></li>
+                <li class="tab col s3"><a href="@routes.Profile.user_profile()"><font color="#1e90ff">Profile</font></a></li>
+                <li class="tab col s3"><a href="#friends"><font color="#1e90ff">Friends</font></a></li>
+                <li class="tab col s3"><a href="#stats"><font color="#1e90ff">Stats</font></a></li>
+            </ul>
+            <div id="feed" class="col s12"></div>
+            <div id="friends" class="col s12"></div>
+            <div id="stats" class="col s12"></div>
+        </div>
+    </div>
+
+    <script>
+            $(document).ready(function(){
+                $('.Tag').tabs();
+                $('.parallax').parallax();
+            });
+    </script>
+
+    <style>
+    .parallax-container {
+        height: 200px;
+    }
+    body {
+        background-color: #ede7f6;
+    }
+    .tabs {
+        background-color: #ede7f6;
+    }
+    a.brand-logo:hover {
+        text-decoration: none;
+        color: white;
+    }
+    </style>
+    
+}
