@@ -1,4 +1,4 @@
-@(thing:String)
+@(thing: ArrayList[UserInfo])
 
 @main_jnet{
     <nav>
@@ -39,6 +39,21 @@
             </ul>
             <div id="friends" class="col s12"></div>
             <div id="stats" class="col s12"></div>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="row">
+        @for(item <- thing){
+            <div class="col s6 push-s3">
+                <div class="card blue lighten-5">
+                    <div class="card-content deep-purple-text">
+                        <span class="card-title">@item.username</span>
+                        <p>@item.email</p>
+                    </div>
+                </div>
+            </div>
+        }
         </div>
     </div>
 
