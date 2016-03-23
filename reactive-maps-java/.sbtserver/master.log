@@ -6560,3 +6560,1126 @@ Copy resource mappings:
 Total time: 1 s, completed Mar 23, 2016 1:08:21 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@11a70729, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 7b2a9251, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.958132877 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:12:06 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@42cb875c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 2709a54d, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.924492143 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:12:27 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@13413709, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 4da32a43, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 1.044490673 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 2 s, completed Mar 23, 2016 1:12:43 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@602dd4b8, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 6cdb923f, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.825445078 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:13:36 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3d6bffba, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 31bbe22d, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 1.21272654 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 2 s, completed Mar 23, 2016 1:13:57 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@708631f6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 1ab619b7, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.829781856 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:14:14 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@250535f9, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 7223df49, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.867137736 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:15:28 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ef0d843, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 520a3ad, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.953488505 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:15:46 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e6e65b2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 67f7ac29, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 1.239369581 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 2 s, completed Mar 23, 2016 1:15:57 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5154bb4a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 883196, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 1.151306212 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 2 s, completed Mar 23, 2016 1:16:06 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5886807a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 361634b8, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.83762086 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:16:20 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@7ebd4130, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 181fe581, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.918373156 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:16:31 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@53120bbb, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 2d7ab0d, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 1.164542875 s
+Invalidating /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala...
+Invalidating (transitively) by inheritance from /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala...
+Initial set of included nodes: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Invalidated by transitive inheritance dependency: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+The /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala source file has the following regular definitions changed:
+	render, apply, profile, f.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /home/yue/Timelines/reactive-maps-java/app/controllers/Profile.java
+New invalidations:
+	Set(/home/yue/Timelines/reactive-maps-java/app/controllers/Profile.java)
+Initial set of included nodes: Set(/home/yue/Timelines/reactive-maps-java/app/controllers/Profile.java)
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala by /home/yue/Timelines/reactive-maps-java/app/controllers/Profile.java
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/main.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /home/yue/Timelines/reactive-maps-java/app/controllers/Application.java by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index.template.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_routing.scala by /home/yue/Timelines/reactive-maps-java/app/controllers/Application.java
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/controllers/routes.java by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/controllers/routes.java
+Including /home/yue/Timelines/reactive-maps-java/app/controllers/Timelines.java by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/index_jnet.template.scala
+Including /home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/main_jnet.template.scala by /home/yue/Timelines/reactive-maps-java/target/scala-2.11/src_managed/main/controllers/routes.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(/home/yue/Timelines/reactive-maps-java/app/controllers/Profile.java)
+Read from stdout: Compiling 1 Scala source and 1 Java source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source and 1 Java source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 3416b380, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 1.340821677 s
+Attempting to call com.sun.tools.javac.api.JavacTool@5884d1ec directly...
+Read from stdout: /home/yue/Timelines/reactive-maps-java/app/controllers/Profile.java:15: method render in class views.html.profile cannot be applied to given types;
+Read from stdout: required: java.util.ArrayList<models.UserInfo>,java.util.ArrayList<models.Post>
+Read from stdout: found: java.util.ArrayList<models.UserInfo>
+Read from stdout: reason: actual and formal argument lists differ in length
+/home/yue/Timelines/reactive-maps-java/app/controllers/Profile.java:15: method render in class views.html.profile cannot be applied to given types;
+  required: java.util.ArrayList<models.UserInfo>,java.util.ArrayList<models.Post>
+  found: java.util.ArrayList<models.UserInfo>
+  reason: actual and formal argument lists differ in length
+Read from stdout: views.html.profile.render
+views.html.profile.render
+Total time: 4 s, completed Mar 23, 2016 1:18:36 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2a5406ac, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 7f87b2c7, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Read from stdout: /home/yue/Timelines/reactive-maps-java/app/views/profile.scala.html:2: not found: value post
+/home/yue/Timelines/reactive-maps-java/app/views/profile.scala.html:2: not found: value post
+Read from stdout: @(post: ArrayList[Post])
+@(post: ArrayList[Post])
+Read from stdout: ^
+  ^
+Read from stdout: /home/yue/Timelines/reactive-maps-java/app/views/profile.scala.html:61: not found: value post
+/home/yue/Timelines/reactive-maps-java/app/views/profile.scala.html:61: not found: value post
+Read from stdout: @for(p <- post) {
+        @for(p <- post) {
+Read from stdout: ^
+                  ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Total time: 1 s, completed Mar 23, 2016 1:19:09 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@10064020, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 3ae9d41a, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Read from stdout: /home/yue/Timelines/reactive-maps-java/app/views/profile.scala.html:2: not found: value post
+/home/yue/Timelines/reactive-maps-java/app/views/profile.scala.html:2: not found: value post
+Read from stdout: @(post: ArrayList[Post])
+@(post: ArrayList[Post])
+Read from stdout: ^
+  ^
+Read from stdout: /home/yue/Timelines/reactive-maps-java/app/views/profile.scala.html:61: not found: value post
+/home/yue/Timelines/reactive-maps-java/app/views/profile.scala.html:61: not found: value post
+Read from stdout: @for(p <- post) {
+        @for(p <- post) {
+Read from stdout: ^
+                  ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Total time: 4 s, completed Mar 23, 2016 1:21:05 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4af65968, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 5199d848, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 1.131185138 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 2 s, completed Mar 23, 2016 1:24:31 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@588f7b9f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 1bd4e075, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.762797497 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:24:56 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@671df57c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 17c39083, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.774827038 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:25:29 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5a634b6a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 22b3330a, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.818014205 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:25:43 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/yue/Timelines/reactive-maps-java/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ae9d190, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/yue/Timelines/reactive-maps-java/target/scala-2.11/twirl/main/views/html/profile.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 1c7e27d9, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/yue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes:/home/yue/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/yue/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/yue/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/yue/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/yue/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/yue/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/yue/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/yue/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/yue/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/home/yue/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/yue/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/yue/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/yue/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/yue/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/yue/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/yue/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/yue/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/home/yue/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/yue/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/yue/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/yue/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/yue/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/yue/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/yue/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/yue/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/yue/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/yue/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/yue/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/yue/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-contrib_2.11/jars/akka-contrib_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar:/home/yue/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-cluster_2.11/jars/akka-cluster_2.11-2.3.3.jar:/home/yue/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.3.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.5.jar:/home/yue/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/jars/leveldbjni-1.7.jar:/home/yue/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/jars/hawtjni-runtime-1.8.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-osx/jars/leveldbjni-osx-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux32/jars/leveldbjni-linux32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-linux64/jars/leveldbjni-linux64-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win32/jars/leveldbjni-win32-1.5.jar:/home/yue/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-win64/jars/leveldbjni-win64-1.5.jar:/home/yue/.ivy2/cache/de.grundid.opendatalab/geojson-jackson/jars/geojson-jackson-1.1.jar:/home/yue/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.0.jar:/home/yue/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/home/yue/.ivy2/cache/org.webjars/knockout/jars/knockout-2.3.0.jar:/home/yue/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar:/home/yue/.ivy2/cache/org.webjars/leaflet/jars/leaflet-0.7.2.jar
+Scala compilation took 0.971510981 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/yue/Timelines/reactive-maps-java/conf/routes,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/routes)
+	(/home/yue/Timelines/reactive-maps-java/conf/application.conf,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/application.conf)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots)
+	(/home/yue/Timelines/reactive-maps-java/conf/play.plugins,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/play.plugins)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/2.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/2.json)
+	(/home/yue/Timelines/reactive-maps-java/conf/bots/1.json,/home/yue/Timelines/reactive-maps-java/target/scala-2.11/classes/bots/1.json)
+Total time: 1 s, completed Mar 23, 2016 1:26:45 AM
+> server-post-command-cleanup
+> server-handle-next-server-request

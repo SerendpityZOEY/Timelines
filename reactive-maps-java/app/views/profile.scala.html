@@ -42,10 +42,22 @@
         </div>
     </div>
 
-    <div class="center">
-        <div class="row">
+    <div class="row">
+
+        <div class="user-post">
+            <div class="col s6 push-s1">
+                <div class="card blue lighten-5">
+                    <div class="card-content deep-purple-text">
+                        <span class="card-title">author</span>
+                        <p>text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="user-info">
         @for(item <- thing){
-            <div class="col s6 push-s3">
+            <div class="col s4 push-s1">
                 <div class="card blue lighten-5">
                     <div class="card-content deep-purple-text">
                         <span class="card-title">@item.username</span>
@@ -56,6 +68,7 @@
         }
         </div>
     </div>
+
 
     <script>
             $(document).ready(function(){
