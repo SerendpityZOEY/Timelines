@@ -62,15 +62,53 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
                             <li><a data-toggle="modal" data-target="#exampleModal"><i class="material-icons">border_color</i></a></li>
-                            <li><a href="#"><i class="material-icons">format_list_bulleted</i></a></li>
+                            <li><a href="#menu-toggle" id="menu-toggle"><i class="material-icons">format_list_bulleted</i></a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
 
         </header>
-        @content
 
+
+        <!--Side Nav Bar-->
+        <div id="wrapper">
+                <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand"><a href="#">Zoey</a></li>
+                    <div class="profile-userpic">
+                        <img src="https://avatars0.githubusercontent.com/u/11455696?v=3&u=518104f10bb45f165146e43aaa0b8bbb5ce11276&s=140" class="img-responsive" alt="">
+                    </div>
+                    <li><a href="#">Admin Login</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+                <!-- /#sidebar-wrapper -->
+
+                <!-- Menu Toggle Script -->
+            <script>
+                    $("#menu-toggle").click(function(e) {
+                        e.preventDefault();
+                        $("#wrapper").toggleClass("toggled");
+                    });
+            </script>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        @content
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+        <!--New Post Modal-->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -121,6 +159,8 @@
                     modal.find('.modal-body input').val(recipient)
                 })
         </script>
+
+        <!--End of New Post Modal-->
 
     </body>
 </html>
