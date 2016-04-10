@@ -1,7 +1,1 @@
-New log file opened at Sat Apr 09 21:37:07 MDT 2016 by 17595@Zoey
-Taking next connection to: 46082
-New client attempting to connect on port: 51927-46082
-  Address = /127.0.1.1:46082
-This client on port 51927 has uuid 6636d3fa-ab33-4da5-b35a-3eff3446407d configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-6636d3fa-ab33-4da5-b35a-3eff3446407d
-Taking next connection to: 46082
+New log file opened at Sat Apr 09 21:40:21 MDT 2016 by 18180@Zoey
