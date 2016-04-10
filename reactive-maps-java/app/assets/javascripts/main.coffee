@@ -37,8 +37,4 @@ require ["knockout", "mainPage", "bootstrap"], (ko, MainPageModel) ->
 
 
 
-#bind all modal links to click event and load specified url into modal
-($ "a[data-toggle=modal]").live "click", ->
-target = ($ @).attr('data-target')
-url = ($ @).attr('href')
-($ target).load(url)
+
