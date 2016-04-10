@@ -1,6 +1,6 @@
-New log file opened at Tue Mar 22 21:55:19 MDT 2016 by 10532@Zoey
-jvm 10532@Zoey
-jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.74-b02
+New log file opened at Sat Apr 09 21:19:52 MDT 2016 by 16241@Zoey
+jvm 16241@Zoey
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.77-b03
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /home/yue/Timelines/reactive-maps-java/project, returning: (reactive-maps-java-build)
 Loading project definition from /home/yue/Timelines/reactive-maps-java/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3bae5707, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@2568256a, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -71,4 +71,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 10532@Zoey logs at Tue Mar 22 21:55:29 MDT 2016, goodbye.
+Closing the 16241@Zoey logs at Sat Apr 09 21:20:08 MDT 2016, goodbye.

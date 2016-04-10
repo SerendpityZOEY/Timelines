@@ -1,23 +1,6 @@
 @(things: ArrayList[Post])
 
 @main_jnet {
-    <nav>
-        <div class="nav-wrapper deep-purple">
-            <div class="row">
-            <div class="col s10 push-s1">
-            <a href="@routes.Timelines.index()" class="brand-logo">Timelines</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#"><i class="material-icons left">search</i>Link with Left Icon</a></li>
-
-                <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
-                <li><a href="#"><i class="material-icons">border_color</i></a></li>
-                <li><a href="#"><i class="material-icons">format_list_bulleted</i></a></li>
-            </ul>
-            </div>
-            </div>
-        </div>
-    </nav>
-
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">
@@ -50,30 +33,6 @@
             });
     </script>
 
-    <style>
-    .parallax-container {
-        height: 200px;
-    }
-    body {
-        background-color: #ede7f6;
-    }
-    .tabs {
-        background-color: #ede7f6;
-    }
-    a.brand-logo:hover {
-        text-decoration: none;
-        color: white;
-    }
-    .button.-border{
-        border-radius: 17px;
-        padding: 12px 18px;
-        flex: 0 0 160px;
-        background:transparent;
-        border: 2px solid #ffffff;
-        color: #ffffff;
-        margin: 10px;
-    }
-    </style>
 <div class="container">
     <!--
     <nav class="navbar navbar-default" role="navigation">
@@ -120,7 +79,9 @@
                 }
             </div>
         </div>
+        <!--
         <button class="btn btn-primary" data-bind="click: submitEmail">Connect</button>
+        -->
     </div>
 
     <div data-bind="if: connecting">
