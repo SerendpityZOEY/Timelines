@@ -19,7 +19,7 @@ public class Timelines extends Controller {
         posts.add(p);
 
         /*
-//        return ok(views.html.index_jnet.render());
+//        return ok(views.html.index.render());
 //
 //        int[] anArray = {
 //                100, 200, 300,
@@ -33,7 +33,7 @@ public class Timelines extends Controller {
 //                models.Post.getPost()
 //        };
 */
-        return ok(views.html.index_jnet.render(posts));
+        return ok(views.html.index.render(posts));
     }
 
 

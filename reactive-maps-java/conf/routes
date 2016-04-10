@@ -2,17 +2,12 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# Home page
-GET        /                    controllers.Application.index
-
 # Test app page
 GET        /app                 controllers.Timelines.index()
 
 # Profile page
 GET        /app/profile         controllers.Profile.user_profile()
 
-# The websocket
-GET        /stream/:email       controllers.Application.stream(email)
 
 # Static assets
 GET        /assets/*file        controllers.Assets.at(path="/public", file)
