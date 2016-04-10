@@ -76,23 +76,35 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                        <h4 class="modal-title" id="exampleModalLabel">New Post</h4>
                     </div>
-                    <div class="modal-body">
+                    <div id="postModal" class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label for="recipient-name" class="control-label">Recipient:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                            <div class="form-group">
-                                <label for="message-text" class="control-label">Message:</label>
+                                <label for="message-text" class="control-label">Text:</label>
                                 <textarea class="form-control" id="message-text"></textarea>
                             </div>
                         </form>
+                            <span class="icons-group">
+                                <i class="material-icons">image</i>
+                                <i class="material-icons">local_offer</i>
+                            </span>
+                            <span class="btn-group">
+                                <button type="button" class="btn btn-default">Privacy Level</button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Public</a></li>
+                                    <li><a href="#">Friends</a></li>
+                                    <li><a href="#">Only Me</a></li>
+                                </ul>
+                            </span>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
+                        <button type="button" class="btn btn-primary">Send</button>
                     </div>
                 </div>
             </div>

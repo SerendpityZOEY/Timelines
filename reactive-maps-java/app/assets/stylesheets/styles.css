@@ -12,9 +12,14 @@ body {
     height: 60px;
 }
 
-#icons-group {
-    margin-bottom: 0;
-    margin-top: 3px;
+.icons-group {
+    padding: 15px 15px 0 5px;
+    position: relative;
+    top: 8px;
+}
+
+#postModal {
+    padding: 20px 5px 0 5px;
 }
 
 /* additional sections */
