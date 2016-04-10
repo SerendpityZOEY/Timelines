@@ -35,3 +35,10 @@ require ["knockout", "mainPage", "bootstrap"], (ko, MainPageModel) ->
   model = new MainPageModel
   ko.applyBindings(model)
 
+
+
+#bind all modal links to click event and load specified url into modal
+($ "a[data-toggle=modal]").live "click", ->
+target = ($ @).attr('data-target')
+url = ($ @).attr('href')
+($ target).load(url)

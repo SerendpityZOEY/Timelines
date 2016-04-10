@@ -1,33 +1,26 @@
 @(things: ArrayList[Post])
 
 @main_jnet {
-    <nav>
-        <div class="nav-wrapper deep-purple">
-            <a class="brand-logo">Timelines</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#"><i class="material-icons left">search</i>Link with Left Icon</a></li>
-
-                <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
-                <li><a href="#"><i class="material-icons">border_color</i></a></li>
-                <li><a href="#"><i class="material-icons">format_list_bulleted</i></a></li>
-            </ul>
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <a href="#"><div class="button -border right">Sign up</div></a>
+                <a href="#"><div class="button -border right">Sign in</div></a>
+                <br><br>
+            </div>
         </div>
-    </nav>
-
-    <div class="parallax-container">
-        <div class="parallax"><img src="http://www.drodd.com/images11/twitter-backgrounds10.jpg"></div>
+        <div class="parallax"><img src="http://www.drodd.com/images11/twitter-backgrounds10.jpg" alt="Unsplashed background img 1"></div>
     </div>
+
 
     <div class="row">
         <div class="col s12">
-            <ul class="tabs">
-                <li class="tab col s3"><a href="#feed"><font color="#1e90ff">Feed</font></a></li>
-                <li class="tab col s3"><a href="#profile"><font color="#1e90ff">Profile</font></a></li>
+            <ul class="tabs" id="Tag">
+                <li class="tab col s3"><a href="@routes.Timelines.index()"><font color="#1e90ff">Feed</font></a></li>
+                <li class="tab col s3"><a href="@routes.Profile.user_profile()"><font color="#1e90ff">Profile</font></a></li>
                 <li class="tab col s3"><a href="#friends"><font color="#1e90ff">Friends</font></a></li>
                 <li class="tab col s3"><a href="#stats"><font color="#1e90ff">Stats</font></a></li>
             </ul>
-            <div id="feed" class="col s12"></div>
-            <div id="profile" class="col s12"></div>
             <div id="friends" class="col s12"></div>
             <div id="stats" class="col s12"></div>
         </div>
@@ -35,26 +28,11 @@
 
     <script>
             $(document).ready(function(){
-                $('ul.tabs').tabs();
+                $('.Tag').tabs();
                 $('.parallax').parallax();
             });
     </script>
 
-    <style>
-    .parallax-container {
-        height: 200px;
-    }
-    body {
-        background-color: #ede7f6;
-    }
-    a.brand-logo{
-        text-decoration:none;
-        color:white;
-    }
-    ul.tabs {
-        background-color: #ede7f6;
-    }
-    </style>
 <div class="container">
     <!--
     <nav class="navbar navbar-default" role="navigation">
@@ -101,7 +79,9 @@
                 }
             </div>
         </div>
+        <!--
         <button class="btn btn-primary" data-bind="click: submitEmail">Connect</button>
+        -->
     </div>
 
     <div data-bind="if: connecting">

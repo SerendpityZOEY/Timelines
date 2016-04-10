@@ -1,7 +1,0 @@
-New log file opened at Sat Apr 09 21:40:21 MDT 2016 by 18180@Zoey
-Taking next connection to: 44150
-New client attempting to connect on port: 36899-44150
-  Address = /127.0.1.1:44150
-This client on port 36899 has uuid a21f63dc-cc0e-4471-8cce-fac0b4d8fb10 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-a21f63dc-cc0e-4471-8cce-fac0b4d8fb10
-Taking next connection to: 44150

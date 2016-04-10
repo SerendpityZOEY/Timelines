@@ -1,0 +1,26 @@
+/*Index Page*/
+.parallax-container {
+    height: 200px;
+}
+body {
+    background-color: #ede7f6;
+}
+.tabs {
+    background-color: #ede7f6;
+}
+a.brand-logo:hover {
+    text-decoration: none;
+    color: white;
+}
+.button.-border{
+    border-radius: 17px;
+    padding: 12px 18px;
+    flex: 0 0 160px;
+    background:transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    margin: 10px;
+}
+
+
+

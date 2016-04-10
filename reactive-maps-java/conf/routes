@@ -8,6 +8,9 @@ GET        /                    controllers.Application.index
 # Test app page
 GET        /app                 controllers.Timelines.index()
 
+# Profile page
+GET        /app/profile         controllers.Profile.user_profile()
+
 # The websocket
 GET        /stream/:email       controllers.Application.stream(email)
 

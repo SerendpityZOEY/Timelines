@@ -14,21 +14,74 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+        <!--Import bootstrap-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
 
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("lib/bootstrap/css/bootstrap.css")"/>
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("lib/bootstrap/css/bootstrap-theme.css")"/>
-    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")"/>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/styles.css")"/>
     <link rel="stylesheet" href="@routes.Assets.at("lib/leaflet/leaflet.css")" />
 
     <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/clock.png")">
 
+    <script type="text/javascript" src="@routes.Assets.at("javascripts/bootstrap.min.js")"></script>
     <script data-main="@routes.Assets.at("javascripts/main.js")" type="text/javascript" src="@routes.Assets.at("lib/requirejs/require.js")"></script>
     </head>
     <body>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
+        <header>
+            <nav>
+                <div class="nav-wrapper deep-purple">
+                    <div class="row">
+                        <div class="col s10 push-s1">
+                            <a href="@routes.Timelines.index()" class="brand-logo">Timelines</a>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li><a href="#"><i class="material-icons left">search</i>Link with Left Icon</a></li>
+                                <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
+                                <li><a data-toggle="modal" data-target="#myModal"><i class="material-icons">border_color</i></a></li>
+                                <li><a href="#"><i class="material-icons">format_list_bulleted</i></a></li>
+                            </ul>
+                            <ul class="side-nav" id="mobile-demo">
+                                <li><a href="#"><i class="material-icons left">search</i>Link with Left Icon</a></li>
+
+                                <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
+                                <li><a href="#"><i class="material-icons">border_color</i></a></li>
+                                <li><a href="#"><i class="material-icons">format_list_bulleted</i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <script>
+                $(".button-collapse").sideNav();
+        </script>
         @content
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
