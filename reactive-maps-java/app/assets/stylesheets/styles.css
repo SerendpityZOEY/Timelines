@@ -323,3 +323,13 @@ body {
 }
 
 /*END OF PROFILE PAGE*/
+
+/*SIGNUP PAGE*/
+#how-to-use {
+    width: 80%;
+    padding: 20px;
+    clear: both;
+    position: relative;
+    margin: 0 0 10px 70px;
+}
+/*END OF SIGNUP PAGE*/
