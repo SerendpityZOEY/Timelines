@@ -1,0 +1,15 @@
+oomysql:
+    image: mysql:5.7.11
+    container_name: oomysql
+    ports:
+        - 3306:3306
+    environment:
+        - MYSQL_DATABASE=timelines
+        - MYSQL_USER=appuser
+        - MYSQL_PASSWORD=resuppa
+        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+        - TERM=dumb
+#    volumes:
+#      - ./sql:/docker-entrypoint-initdb.d/
+#    working_dir: /docker-entrypoint-initdb.d/
+

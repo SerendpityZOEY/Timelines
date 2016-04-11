@@ -1,13 +1,25 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.*;
+import javax.persistence.*;
 
-public class Post
+import play.db.ebean.*;
+import play.data.format.*;
+import play.data.validation.*;
+
+
+public class Post extends Model
 {
     public String author;
     public String text;
 
-    public String getAuthor(){
+    public String getAuthor()
+    {
+
+        // Have to manually close this at some point
+//        Connection connection = DB.getConnection();
+
         return "Jane Doe";
     }
 

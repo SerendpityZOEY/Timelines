@@ -11,8 +11,14 @@ libraryDependencies ++= Seq(
   "org.webjars" % "requirejs" % "2.1.11-1",
   "org.webjars" % "leaflet" % "0.7.2",
   "org.webjars" % "rjs" % "2.1.11-1-trireme" % "test",
-  "org.webjars" % "squirejs" % "0.1.0" % "test"
+  "org.webjars" % "squirejs" % "0.1.0" % "test",
+  javaCore,
+  javaJdbc,
+  javaEbean,
+  "javax.inject" % "javax.inject" % "1",
+  "javax.persistence" % "persistence-api" % "1.0.2"
 )
+
 
 scalaVersion := "2.11.1"
 
@@ -21,7 +27,5 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava)
 MochaKeys.requires += "SetupMocha.js"
 
 pipelineStages := Seq(rjs, digest, gzip)
-
-
 
 fork in run := true
