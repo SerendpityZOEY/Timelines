@@ -7,9 +7,9 @@ oomysql:
         - MYSQL_DATABASE=timelines
         - MYSQL_USER=playdbuser
         - MYSQL_PASSWORD=playdbuserpw
-#        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
         - TERM=dumb
-#    volumes:
-#      - ./sql:/docker-entrypoint-initdb.d/
-#    working_dir: /docker-entrypoint-initdb.d/
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d/
+    working_dir: /docker-entrypoint-initdb.d/
 
