@@ -1,6 +1,6 @@
-oomysql:
-    image: mysql:5.7.11
-    container_name: oomysql
+oomariadb:
+    image: mariadb:10.0.22
+    container_name: oomariadb
     ports:
         - 3306:3306
     environment:

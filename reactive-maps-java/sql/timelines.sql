@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.11, for Linux (x86_64)
+-- MySQL dump 10.15  Distrib 10.0.22-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: timelines
 -- ------------------------------------------------------
--- Server version	5.7.11
+-- Server version	10.0.22-MariaDB-1~jessie
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `play_evolutions`;
 CREATE TABLE `play_evolutions` (
   `id` int(11) NOT NULL,
   `hash` varchar(255) NOT NULL,
-  `applied_at` timestamp NOT NULL,
+  `applied_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `apply_script` text,
   `revert_script` text,
   `state` varchar(255) DEFAULT NULL,
@@ -51,13 +51,15 @@ DROP TABLE IF EXISTS `post`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `post` (
-  `id` int(10) unsigned NOT NULL,
-  `content` varchar(500) NOT NULL,
-  `userId` varchar(255) NOT NULL,
-  `postDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `lastModified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'id of post',
+  `content` varchar(500) NOT NULL COMMENT 'content of post',
+  `userId` int(10) unsigned NOT NULL COMMENT 'user who owns post',
+  `postDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'time post was created',
+  `lastModified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'last time entry was changed',
+  PRIMARY KEY (`id`),
+  KEY `post_ibfk_1` (`userId`),
+  CONSTRAINT `post_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `user` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,7 +68,7 @@ CREATE TABLE `post` (
 
 LOCK TABLES `post` WRITE;
 /*!40000 ALTER TABLE `post` DISABLE KEYS */;
-INSERT INTO `post` VALUES (1,'This post came from the database','100','2016-04-16 07:46:19','2016-04-16 07:57:51');
+INSERT INTO `post` VALUES (1,'This is a db post from Jane',1,'2016-04-16 09:28:09','2016-04-16 09:28:09');
 /*!40000 ALTER TABLE `post` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -83,7 +85,7 @@ CREATE TABLE `tag` (
   `tag` varchar(65) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `tag` (`tag`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -92,7 +94,37 @@ CREATE TABLE `tag` (
 
 LOCK TABLES `tag` WRITE;
 /*!40000 ALTER TABLE `tag` DISABLE KEYS */;
+INSERT INTO `tag` VALUES (1,1,'firstPost');
 /*!40000 ALTER TABLE `tag` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `userName` varchar(64) NOT NULL,
+  `firstName` varchar(1024) NOT NULL,
+  `lastName` varchar(1024) NOT NULL,
+  `email` varchar(1024) NOT NULL,
+  `joinDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `lastModified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'testusername','Jane','Johnson','hello@email.com','2016-04-16 09:25:05','2016-04-16 09:25:05');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -108,4 +140,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-04-16  8:36:59
+-- Dump completed on 2016-04-16  9:33:33
