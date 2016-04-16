@@ -6,7 +6,7 @@ import java.sql.Connection;
 import play.mvc.*;
 import play.db.*;
 
-class JavaApplicationDatabase extends Controller {
+public class JavaApplicationDatabase extends Controller {
   Connection cxn;
 
   public JavaApplicationDatabase() {

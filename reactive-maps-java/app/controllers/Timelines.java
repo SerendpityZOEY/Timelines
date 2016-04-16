@@ -3,14 +3,17 @@ package controllers;
 
 import play.mvc.*;
 import models.*;
+
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class Timelines extends Controller {
 
     /**
      * The index page.
+     * @throws SQLException 
      */
-    public static Result index()
+    public static Result index() throws SQLException
     {
         ArrayList<Post> posts = new ArrayList<Post>();
         Post p = new Post();
