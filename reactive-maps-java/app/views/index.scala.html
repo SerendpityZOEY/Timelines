@@ -1,44 +1,104 @@
-@()
+@(things: ArrayList[Post])
 
 @main {
+    <!-- first section - Home -->
+    <div id="home" class="home">
+        <div class="text-vcenter">
+            <h1>Timelines</h1>
 
-    <div class="container">
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <span class="navbar-brand">Reactive Maps</span>
-            </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li data-bind="ifnot: disconnected, click: disconnect"><a href="#">Disconnect</a></li>
-                    <li data-bind="ifnot: disconnected, click: toggleMockGps, css: {active: mockGps() != null}"><a href="#">Mock GPS</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <div data-bind="if: disconnected">
-            <form role="form">
-                <div class="form-group">
-                    <input type="email" class="form-control" data-bind="value: email" placeholder="Email address"/>
-                </div>
-            </form>
-            <button class="btn btn-primary" data-bind="click: submitEmail">Connect</button>
-        </div>
-
-        <div data-bind="if: connecting">
-            <span data-bind="text: connecting"></span>
-        </div>
-
-        <div class="row maps" data-bind="ifnot: disconnected">
-            <div data-bind="css: {'col-md-12': mockGps() == null, 'col-md-8': mockGps() != null}" id="map"></div>
-            <div class="mockGpsContainer col-md-4">
-                <div id="mockGps"></div>
+            <div class="StreamsHero-buttonContainer">
+                <a class="Button StreamsSignUp js-nav js-signup" data-component="hero" data-element="buttons" href="@routes.SignUp.index()">Sign up</a>
+                <button class="Button StreamsLogin js-login" type="submit" data-toggle="modal" data-target="#loginModal">Log In</button>
             </div>
         </div>
     </div>
+        <!-- /first section -->
+
+<ul class="nav nav-pills nav-justified">
+    <li role="presentation" class="active"><a href="@routes.Timelines.index()">Home</a></li>
+    <li role="presentation"><a href="@routes.Profile.user_profile()">Profile</a></li>
+    <li role="presentation"><a href="#">Friends</a></li>
+    <li role="presentation"><a href="#">Stats</a></li>
+</ul>
+    <div id="br-line"></div>
+
+<div class="container">
+    <div data-bind="if: disconnected">
+
+    <div class="row" id="feed-group">
+        @for(item<-things){
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="@routes.Assets.at("images/clock.png")" alt="..." style="height:30px;weight:30px;">
+                    <div class="caption">
+                        <h3>@item.author</h3>
+                        <p>@item.text</p>
+                        <p id="icons-group"><i class="material-icons">favorite</i> <i class="material-icons">comment</i></p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+        <!--
+        <button class="btn btn-primary" data-bind="click: submitEmail">Connect</button>
+        -->
+    </div>
+
+    <div data-bind="if: connecting">
+        <span data-bind="text: connecting"></span>
+    </div>
+
+    <div class="row maps" data-bind="ifnot: disconnected">
+        <!--<div data-bind="css: {'col-md-12': mockGps() == null, 'col-md-8': mockGps() != null}" id="map"></div>-->
+        <!--<div class="mockGpsContainer col-md-4">-->
+            <!--<div id="mockGps"></div>-->
+        <!--</div>-->
+    </div>
+
+</div> <!--End of container-->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">User Login</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="right-inner-addon">
+                                <i class="fa fa-envelope"></i>
+                                <input class="form-control input-lg" placeholder="Email Address" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="right-inner-addon">
+                                <i class="fa fa-key"></i>
+                                <input class="form-control input-lg" placeholder="Password" type="password">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Forgot password? </a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+            $('#loginModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // Button that triggered the modal
+                var recipient = button.data('whatever') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this)
+                modal.find('.modal-title').text('New message to ' + recipient)
+                modal.find('.modal-body input').val(recipient)
+            })
+    </script>
+
 }

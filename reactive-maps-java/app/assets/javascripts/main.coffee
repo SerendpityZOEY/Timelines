@@ -35,3 +35,6 @@ require ["knockout", "mainPage", "bootstrap"], (ko, MainPageModel) ->
   model = new MainPageModel
   ko.applyBindings(model)
 
+
+
+
