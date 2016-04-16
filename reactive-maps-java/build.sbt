@@ -16,7 +16,8 @@ libraryDependencies ++= Seq(
   javaJdbc,
   javaEbean,
   "javax.inject" % "javax.inject" % "1",
-  "javax.persistence" % "persistence-api" % "1.0.2"
+  "javax.persistence" % "persistence-api" % "1.0.2",
+  "mysql" % "mysql-connector-java" % "5.1.38"
 )
 
 

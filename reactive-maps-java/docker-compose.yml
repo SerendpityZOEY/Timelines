@@ -5,9 +5,9 @@ oomysql:
         - 3306:3306
     environment:
         - MYSQL_DATABASE=timelines
-        - MYSQL_USER=appuser
-        - MYSQL_PASSWORD=resuppa
-        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+        - MYSQL_USER=playdbuser
+        - MYSQL_PASSWORD=playdbuserpw
+#        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
         - TERM=dumb
 #    volumes:
 #      - ./sql:/docker-entrypoint-initdb.d/
