@@ -11,5 +11,8 @@ GET        /app/profile         controllers.Profile.user_profile()
 # User Sign up page
 GET        /app/signup          controllers.SignUp.index()
 
+# User Sign up page
+POST        /app/signup          controllers.SignUp.Submit()
+
 # Static assets
 GET        /assets/*file        controllers.Assets.at(path="/public", file)
