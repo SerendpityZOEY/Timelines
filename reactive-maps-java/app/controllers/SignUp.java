@@ -21,7 +21,7 @@ public class SignUp extends Controller{
       Logger.debug("hello this is debugging" + formData.getData().toString());
       Logger.info("Hello from the otter slide");
       System.out.println("Hello from the otter sliiiiiiide.");
-      return redirect(controllers.Timelines.index().toString());
+      return redirect("/app"); 
       
     }
 
