@@ -11,7 +11,7 @@ public class Timelines extends Controller {
 
     /**
      * The index page.
-     * @throws SQLException 
+     * @throws SQLException
      */
     public static Result index() throws SQLException
     {
@@ -24,5 +24,12 @@ public class Timelines extends Controller {
         return ok(views.html.index.render(posts));
     }
 
+    public static Result postIndex() throws SQLException
+    {
+        ArrayList<Post> posts = new ArrayList<Post>();
+
+        System.out.println("aaaaaaaaaaaaaaaa");
+        return ok(views.html.index.render(posts));
+    }
 
 }

@@ -2,7 +2,18 @@ package models;
 
 import java.util.ArrayList;
 
-public class UserInfo
+import play.db.ebean.*;
+import play.data.validation.Constraints.*;
+
+import javax.persistence.*;
+
+import java.sql.Array;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class UserInfo extends Model
 {
     public String username;
     public String email;
