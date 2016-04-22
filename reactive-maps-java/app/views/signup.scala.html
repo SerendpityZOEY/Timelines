@@ -42,6 +42,7 @@
         <div class="tab-content">
           <div class="tab-pane fade in active" id="new">
             <br>
+            <form action="/app/signup" method="post">
             <fieldset>
 
               <div class="form-group">
@@ -49,13 +50,19 @@
                   <div class="col-lg-6">
                     <div class="right-inner-addon">
                       <i class="fa fa-user"></i>
-                      <input class="form-control input-lg" placeholder="First Name" type="text">
+
+                      <input class="form-control input-lg" placeholder="First Name" name="first-name" type="text">
+                      @*
+                      @form(routes.Application.postIndex(), 'class -> "form-horizontal") {
+                        @helper.inputText(SignupForm("name"), '_label -> "Name", 'placeholder -> "My Name")
+                      }
+                      *@
                     </div><!-- /input-group -->
                   </div><!-- /.col-lg-6 -->
                   <div class="col-lg-6">
                     <div class="right-inner-addon">
                       <i class="fa fa-user"></i>
-                      <input class="form-control input-lg" placeholder="Last Name" type="text">
+                      <input class="form-control input-lg" placeholder="Last Name" name="last-name" type="text">
                     </div><!-- /input-group -->
                   </div><!-- /.col-lg-6 -->
                 </div><!-- /.row -->
@@ -64,20 +71,20 @@
               <div class="form-group">
                 <div class="right-inner-addon">
                   <i class="fa fa-envelope"></i>
-                  <input class="form-control input-lg" placeholder="Email Address" type="text">
+                  <input class="form-control input-lg" placeholder="Email Address" name="email" type="text">
                 </div>
               </div>
 
               <div class="form-group">
                 <div class="right-inner-addon">
                   <i class="fa fa-key"></i>
-                  <input class="form-control input-lg" placeholder="Password" type="password">
+                  <input class="form-control input-lg" placeholder="Password" name="password" type="password">
                 </div>
               </div>
               <div class="form-group">
                 <div class="right-inner-addon">
                   <i class="fa fa-key"></i>
-                  <input class="form-control input-lg" placeholder="Confirm Password" id="" type="password">
+                  <input class="form-control input-lg" placeholder="Confirm Password" name="password-confirm" type="password">
                 </div>
               </div>
               <div class="form-group">
@@ -89,8 +96,9 @@
             </fieldset>
 
             <div class=" text-center">
-              <button class="btn btn-success">Sign Up</button>
+              <button class="btn btn-success" value="signup">Sign Up</button>
             </div>
+            </form>
           </div>
 
           <div class="tab-pane fade" id="user">

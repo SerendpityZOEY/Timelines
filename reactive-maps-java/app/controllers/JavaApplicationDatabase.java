@@ -1,10 +1,11 @@
 package controllers;
 
 //import javax.inject.Inject;
-import java.sql.Connection;
 
-import play.mvc.*;
 import play.db.*;
+import play.mvc.*;
+
+import java.sql.Connection;
 
 public class JavaApplicationDatabase extends Controller {
   Connection cxn;
