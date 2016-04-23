@@ -41,22 +41,15 @@
         <p class="click2select">Click to select</p>
         <div class="tab-content">
           <div class="tab-pane fade in active" id="new">
-            <br>
-            <form action="/app/signup" method="post">
-            <fieldset>
-
+            <br>  
+		<form action="/app/signup" method="post">
+			<fieldset>
               <div class="form-group">
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="right-inner-addon">
                       <i class="fa fa-user"></i>
-
                       <input class="form-control input-lg" placeholder="First Name" name="first-name" type="text">
-                      @*
-                      @form(routes.Application.postIndex(), 'class -> "form-horizontal") {
-                        @helper.inputText(SignupForm("name"), '_label -> "Name", 'placeholder -> "My Name")
-                      }
-                      *@
                     </div><!-- /input-group -->
                   </div><!-- /.col-lg-6 -->
                   <div class="col-lg-6">
@@ -84,7 +77,7 @@
               <div class="form-group">
                 <div class="right-inner-addon">
                   <i class="fa fa-key"></i>
-                  <input class="form-control input-lg" placeholder="Confirm Password" name="password-confirm" type="password">
+                  <input class="form-control input-lg" placeholder="Confirm Password" id="" name="password-confirm" type="password">
                 </div>
               </div>
               <div class="form-group">
@@ -94,13 +87,12 @@
                 </div>
               </div>
             </fieldset>
-
             <div class=" text-center">
               <button class="btn btn-success" value="signup">Sign Up</button>
             </div>
             </form>
           </div>
-
+		
           <div class="tab-pane fade" id="user">
             <br>
             <fieldset>

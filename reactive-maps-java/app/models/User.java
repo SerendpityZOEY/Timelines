@@ -12,15 +12,16 @@ import play.data.validation.*;
 
 @Entity
 @Table(name="user")
-public class User extends Model{
-  
+
+public class User extends Model {
+
   /**
    * Convenience Finder for 'active record' style.
    */
   public static final Finder<Long,User> find = new Finder<>(Long.class, User.class);
     
   @OneToMany
-  List<Post> posts;
+  List<PostModel> posts;
   @Id
   UUID id; 
   
@@ -45,7 +46,7 @@ public class User extends Model{
     this.registered = registered;
   }
 
-  public List<Post> getPosts() {
+  public List<PostModel> getPosts() {
     return posts;
   }
 

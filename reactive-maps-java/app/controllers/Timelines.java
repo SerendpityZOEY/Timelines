@@ -15,27 +15,12 @@ public class Timelines extends Controller {
      */
     public static Result index() throws SQLException
     {
-        ArrayList<Post> posts = new ArrayList<Post>();
-        Post p = new Post();
+        ArrayList<PostModel> posts = new ArrayList<PostModel>();
+        PostModel p = new PostModel();
         posts.add(p);
         posts.add(p);
         posts.add(p);
 
-        /*
-//        return ok(views.html.index.render());
-//
-//        int[] anArray = {
-//                100, 200, 300,
-//                400, 500, 600,
-//                700, 800, 900, 1000
-//        };
-        Post p = new Post();
-        ArrayList<Post> posts = p.getPosts();
-
-//        String[] anArray = {
-//                models.Post.getPost()
-//        };
-*/
         return ok(views.html.index.render(posts));
     }
 

@@ -109,5 +109,59 @@
         </div>
         <!-- /#page-content-wrapper -->
 
+        <!--New Post Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog" role="document">
+            
+                <div class="modal-content">
+                <form action="/app/entry" method="post">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">New Post</h4>
+                    </div>
+                    <div id="postModal" class="modal-body">
+                        
+                            <div class="form-group">
+                                <label for="message-text" class="control-label">Text:</label>
+                                <textarea class="form-control" id="message-text" name="message-text"></textarea>
+                            </div>
+                        
+                            <span class="icons-group">
+                                <i class="material-icons">image</i>
+                                <i class="material-icons">local_offer</i>
+                            </span>
+                            <span class="btn-group">
+                               
+                                <select class="form-control" name="privacy-level">
+                                <option value="public">Public</option>
+                                <option value="private">Private</option>
+                                <option selected="selected" value="friends">Friends</option>
+                                </select>                                
+                            </span>
+                            
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+                $('#exampleModal').on('show.bs.modal', function (event) {
+                    var button = $(event.relatedTarget) // Button that triggered the modal
+                    var recipient = button.data('whatever') // Extract info from data-* attributes
+                    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                    var modal = $(this)
+                    modal.find('.modal-title').text('New message to ' + recipient)
+                    modal.find('.modal-body input').val(recipient)
+                })
+        </script>
+
+        <!--End of New Post Modal-->
+
     </body>
 </html>
