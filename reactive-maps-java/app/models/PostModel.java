@@ -17,11 +17,11 @@ import java.sql.Statement;
 
 @Entity 
 @Table(name="post")
-public class Post extends Model
+public class PostModel extends Model
 {
     @ManyToOne
     User user;
-    Post post;
+    PostModel post;
     String content;
     public String author;
     public String text;
@@ -49,7 +49,7 @@ public class Post extends Model
       return results;
     }
 
-    public Post() throws SQLException{
+    public PostModel() throws SQLException{
         this.author = getAuthor();
         this.text = getText();
     }
