@@ -18,7 +18,7 @@ GET        /app/signup          controllers.SignUp.index()
 POST        /app/signup          controllers.SignUp.Submit()
 
 # Create entry
-#POST        /app/entry          controllers.Post.Submit()
+POST        /app/entry          controllers.Timelines.Submit()
 
 # Static assets
 GET        /assets/*file        controllers.Assets.at(path="/public", file)
