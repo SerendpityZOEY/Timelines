@@ -26,7 +26,7 @@ public class Timelines extends Controller {
 
     public static Result postIndex() throws SQLException
     {
-        ArrayList<Post> posts = new ArrayList<Post>();
+        ArrayList<PostModel> posts = new ArrayList<PostModel>();
 
         System.out.println("aaaaaaaaaaaaaaaa");
         return ok(views.html.index.render(posts));
