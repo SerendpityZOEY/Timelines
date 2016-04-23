@@ -5,6 +5,9 @@
     <div id="home" class="home">
         <div class="text-vcenter">
             <h1>Timelines</h1>
+            <div class="StreamsHero-buttonContainer">
+                <a class="Button StreamsSignUp js-nav js-signup" data-component="hero" data-element="buttons" href="@routes.Timelines.index()">Log out</a>
+            </div>
         </div>
     </div>
         <!-- /first section -->
@@ -88,6 +91,48 @@
             </div>
         </div>
     </div>
+
+        <!--New Post Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+                <form action="/app/entry" method="post">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">New Post</h4>
+                    </div>
+                    <div id="postModal" class="modal-body">
+
+                        <div class="form-group">
+                            <label for="message-text" class="control-label">Text:</label>
+                            <textarea class="form-control" id="message-text" name="message-text"></textarea>
+                        </div>
+
+                        <span class="icons-group">
+                            <i class="material-icons">image</i>
+                            <i class="material-icons">local_offer</i>
+                        </span>
+                        <span class="btn-group">
+
+                            <select class="form-control" name="privacy-level">
+                                <option value="public">Public</option>
+                                <option value="private">Private</option>
+                                <option selected="selected" value="friends">Friends</option>
+                            </select>
+                        </span>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+        <!--End of New Post Modal-->
     <br>
     <br>
 

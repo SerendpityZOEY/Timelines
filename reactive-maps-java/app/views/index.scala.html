@@ -8,7 +8,8 @@
 
             <div class="StreamsHero-buttonContainer">
                 <a class="Button StreamsSignUp js-nav js-signup" data-component="hero" data-element="buttons" href="@routes.SignUp.index()">Sign up</a>
-                <button class="Button StreamsLogin js-login" type="submit" data-toggle="modal" data-target="#loginModal">Log In</button>
+                <a class="Button StreamsSignUp js-nav js-signup" data-component="hero" data-element="buttons" href="@routes.SignUp.index()">Login</a>
+                <!--<button class="Button StreamsLogin js-login" type="submit" data-toggle="modal" data-target="#loginModal">Log In</button>-->
             </div>
         </div>
     </div>
@@ -59,15 +60,16 @@
 
 </div> <!--End of container-->
 
+    <!--
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+                <form action="/login" method="post">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="exampleModalLabel">User Login</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
                         <div class="form-group">
                             <div class="right-inner-addon">
                                 <i class="fa fa-envelope"></i>
@@ -80,62 +82,40 @@
                                 <input class="form-control input-lg" placeholder="Password" type="password">
                             </div>
                         </div>
-                    </form>
+
                 </div>
                 <div class="modal-footer">
                     <a href="#">Forgot password? </a>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Login</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
+    -->
         <!--New Post Modal-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog" role="document">
+
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="exampleModalLabel">New Post</h4>
-                </div>
-                <div id="postModal" class="modal-body">
+                <form action="/app/entry" method="post">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Opps</h4>
+                    </div>
+                    <div id="postModal" class="modal-body">
 
+                    <p>You are not login yet.</p>
 
-                    <form action="/app/signup" method="post">
-                        <div class="form-group">
-                            <label for="message-text" class="control-label">Text:</label>
-                            <textarea class="form-control" id="message-text" name="message-text"></textarea>
-                        </div>
-                    </form>
-
-                    @*
-                    @form(routes.Timelines.postIndex(), 'class -> "form-horizontal") {
-                        @helper.inputText(things("text"), '_label -> "Text:", 'placeholder -> "Text")
-                    }
-                    *@
-                    <span class="icons-group">
-                        <i class="material-icons">image</i>
-                        <i class="material-icons">local_offer</i>
-                    </span>
-                    <span class="btn-group">
-                        <button type="button" class="btn btn-default">Privacy Level</button>
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Public</a></li>
-                            <li><a href="#">Friends</a></li>
-                            <li><a href="#">Only Me</a></li>
-                        </ul>
-                    </span>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send</button>
-                </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+
         <!--End of New Post Modal-->
 }
