@@ -32,6 +32,7 @@ public class Timelines extends Controller {
         //DynamicForm formData = Form.form().bindFromRequest();
         DynamicForm.Dynamic formData = Form.form().bindFromRequest().get();
         Logger.info("hello this is debugging" + formData.getData().toString());
+        Logger.info("Heeeeeeeeeeeeey");
         /*
         Logger.debug("hello this is debugging" + formData.getData().toString());
         Logger.info("Hello from the otter slide");

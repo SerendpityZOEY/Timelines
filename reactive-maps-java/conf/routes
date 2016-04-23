@@ -5,9 +5,6 @@
 # Test app page
 GET        /app                 controllers.Timelines.index()
 
-
-
-
 # Profile page
 GET        /app/profile         controllers.Profile.user_profile()
 
@@ -19,6 +16,11 @@ POST        /app/signup          controllers.SignUp.Submit()
 
 # Create entry
 POST        /app/entry          controllers.Timelines.Submit()
+
+# Authentication
+GET     /app/login                      controllers.Application.login()
+POST    /app/login                      controllers.Application.authenticate()
+GET     /app/logout                     controllers.Application.logout()
 
 # Static assets
 GET        /assets/*file        controllers.Assets.at(path="/public", file)

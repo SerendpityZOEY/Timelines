@@ -11,7 +11,8 @@
 
             <div class="StreamsHero-buttonContainer">
                 <a class="Button StreamsSignUp js-nav js-signup" data-component="hero" data-element="buttons" href="@routes.SignUp.index()">Sign up</a>
-                <button class="Button StreamsLogin js-login" type="submit" data-toggle="modal" data-target="#loginModal">Log In</button>
+                <a class="Button StreamsSignUp js-nav js-signup" data-component="hero" data-element="buttons" href="@routes.SignUp.index()">Login</a>
+                <!--<button class="Button StreamsLogin js-login" type="submit" data-toggle="modal" data-target="#loginModal">Log In</button>-->
             </div>
         </div>
     </div>
@@ -62,15 +63,16 @@
 
 </div> <!--End of container-->
 
+    <!--
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+                <form action="/login" method="post">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="exampleModalLabel">User Login</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
                         <div class="form-group">
                             <div class="right-inner-addon">
                                 <i class="fa fa-envelope"></i>
@@ -83,16 +85,18 @@
                                 <input class="form-control input-lg" placeholder="Password" type="password">
                             </div>
                         </div>
-                    </form>
+
                 </div>
                 <div class="modal-footer">
                     <a href="#">Forgot password? </a>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Login</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
+    -->
         <!--New Post Modal-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog" role="document">
