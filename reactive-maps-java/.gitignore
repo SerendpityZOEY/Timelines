@@ -19,6 +19,8 @@ bin
 .DS_Store
 activator-sbt-*-shim.sbt
 .sbtserver
+*.sbtserver/connections/master.log
+.sbtserver/master.log
 .idea
 .idea/*
 .DS_Store
