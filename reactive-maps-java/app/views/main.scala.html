@@ -61,7 +61,7 @@
                             <button type="submit" class="btn btn-default">Submit</button>
                         </form>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
+                            <li><a data-toggle="modal" data-target="#notification"><i class="material-icons">mail_outline</i></a></li>
                             <li><a data-toggle="modal" data-target="#exampleModal"><i class="material-icons">border_color</i></a></li>
                             <li><a href="#menu-toggle" id="menu-toggle"><i class="material-icons">format_list_bulleted</i></a></li>
                         </ul>
@@ -108,7 +108,6 @@
             </div>
         </div>
         <!-- /#page-content-wrapper -->
-
         <!--New Post Modal-->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
             <div class="modal-dialog" role="document">
@@ -124,9 +123,7 @@
                             <div class="form-group">
                                 <label for="message-text" class="control-label">Text:</label>
                                 <textarea class="form-control" id="message-text" name="message-text"></textarea>
-                            </div>
-                            
-                        
+                            </div>                            
                             <span class="icons-group">
                                 <i class="material-icons">image</i>
                                 <i class="material-icons">local_offer</i>
@@ -135,7 +132,10 @@
 	                            <label for="tag-text" class="control-label">Tag:</label>
 	                            <textarea class="form-control" id="tag-text" name="tag-text"></textarea>
                             </span>
+                            
+                           
                             <span class="btn-group">
+                               
                                 <select class="form-control" name="privacy-level">
                                 <option value="public">Public</option>
                                 <option value="private">Private</option>
@@ -166,6 +166,38 @@
         </script>
 
         <!--End of New Post Modal-->
+<!--Notification-->
+            <div class="modal fade" id="notification" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
 
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="exampleModalLabel">Nitification</h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <span class="badge">5</span>
+                                        Comments
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge">14</span>
+                                        Likes
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge">1</span>
+                                        Friend Request
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
     </body>
 </html>

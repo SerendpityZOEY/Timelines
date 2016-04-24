@@ -13,7 +13,6 @@ import play.data.validation.*;
 @Entity
 @Table(name="user")
 public class User extends Model {
-  
   /**
    * Convenience Finder for 'active record' style.
    */

@@ -17,5 +17,14 @@ POST        /app/signup          controllers.SignUp.Submit()
 # Create entry
 POST        /app/entry          controllers.Post.Submit()
 
+# Not sure what Zoey wanted here
+POST        /app/otherentry     controllers.Timelines.Submit()
+
+# Authentication
+GET     /app/login                      controllers.Application.login()
+POST    /app/login                      controllers.Application.authenticate()
+GET     /app/logout                     controllers.Application.logout()
+
 # Static assets
 GET        /assets/*file        controllers.Assets.at(path="/public", file)
+

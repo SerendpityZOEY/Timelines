@@ -1,44 +1,71 @@
 package controllers;
+import play.*;
 import play.mvc.*;
-import play.mvc.Http.RequestBody;
+import play.Logger;
+import play.data.Form;
+import play.data.DynamicForm;
+
 import models.*;
-import views.*;
-import views.html.testinput;
-
-//import play.libs.ws.*;
-import play.libs.F.Function;
-import play.libs.F.Promise;
-
-import java.util.ArrayList;
+import views.html.*;
 
 public class Application extends Controller {
-  
-  public static Result index() {
-    RequestBody body = request().body();
-    return ok("Got body: " + body);
-  }
-  
-  public static void login(String userCode,String password){        
-    User loginUser = null;
-    if(loginUser == null){
-//        flash.put("username",userCode);
-//        flash.error("Invalid Credentials");
-        index();
-    }
-    else{
-//        Cache.set(session.getId(),loginUser,"20mn");
-//        Home.Home();
-        index();
-    }
-}
-  
-//  public static Result postIndex(){
-//    WSRequestHolder holder = WS.url("http://example.com");
-//    WSRequestHolder complexHolder = holder.setHeader("headerKey", "headerValue")
-//        .setTimeout(1000)
-//        .setQueryParameter("paramKey", "paramValue");
-//    
-//  }
-  
 
+    // -- Authentication
+
+    public static class Login {
+
+        public String email_address;
+        public String password;
+
+        public String validate() {
+            if(Accounts.authenticate(email_address, password) == null) {
+                return "Invalid user or password";
+            }
+            return null;
+        }
+
+    }
+
+    /**
+     * Login page.
+     */
+    public static Result login() {
+        return ok(
+                //login.render(form(Login.class))
+                views.html.signup.render()
+        );
+    }
+
+    /**
+     * Handle login form submission.
+     */
+
+    public static Result authenticate() {
+        //Form<Login> loginForm = form(Login.class).bindFromRequest();
+        DynamicForm.Dynamic formData = Form.form().bindFromRequest().get();
+        Logger.info("hello this is debugging" + formData.getData().toString());
+        return redirect("/app/profile");
+        /*
+        if(loginForm.hasErrors()) {
+            return badRequest(login.render(loginForm));
+        } else {
+            session("user_name", loginForm.get().user_name);
+            return redirect(
+                    "/app"
+            );
+        }
+        */
+    }
+
+    /**
+     * Logout and clean the session.
+     */
+
+    public static Result logout() {
+        session().clear();
+        flash("success", "You've been logged out");
+        return redirect(
+                "/app"
+        );
+    }
 }
