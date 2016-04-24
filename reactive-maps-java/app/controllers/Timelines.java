@@ -6,22 +6,32 @@ import play.data.Form;
 import play.mvc.*;
 import models.*;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 
 public class Timelines extends Controller {
 
     /**
      * The index page.
      * @throws SQLException
+     * @throws IOException 
+     * @throws JsonMappingException 
+     * @throws JsonParseException 
      */
-    public static Result index() throws SQLException
+    public static Result index() throws SQLException, JsonParseException, JsonMappingException, IOException
     {
-        ArrayList<PostModel> posts = new ArrayList<PostModel>();
-        PostModel p = new PostModel();
-        posts.add(p);
-        posts.add(p);
-        posts.add(p);
+//        ArrayList<PostModel> posts = new ArrayList<PostModel>();
+//        PostModel p = new PostModel();
+//        posts.add(p);
+//        posts.add(p);
+//        posts.add(p);
+        
+        ArrayList<PostModel> posts = (ArrayList<PostModel>) Post.cookieToList(
+                "Posts", PostModel.class);
 
         return ok(views.html.index.render(posts));
     }

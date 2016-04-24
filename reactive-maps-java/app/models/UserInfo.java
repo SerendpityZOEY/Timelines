@@ -1,34 +1,56 @@
 package models;
 
-import java.util.ArrayList;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import play.db.ebean.*;
-import play.data.validation.Constraints.*;
 
-import javax.persistence.*;
-
-import java.sql.Array;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
+@JsonIgnoreProperties
 public class UserInfo extends Model
 {
-    public String username;
-    public String email;
+    private static final long serialVersionUID = 1L;
+    private String username;
+    private String email;
+    private String text;
 
-    public String getUsername(){
-        return "Jane Doe";
+    @JsonProperty("author")
+    public String getUsername()
+    {
+        return this.username;
     }
 
-    public String getEmail(){
-        return "test@gmail.com";
+    public String getEmail()
+    {
+        return this.email;
     }
 
-    public UserInfo(){
+    public UserInfo()
+    {
         this.username = getUsername();
         this.email = getEmail();
+    }
+
+    @JsonProperty("author")
+    public void setUsername(String username)
+    {
+        this.username = username;
+    }
+
+    public void setEmail(String email)
+    {
+        this.email = email;
+    }
+    
+    @JsonProperty("message-text")
+    public String getText()
+    {
+        return text;
+    }
+    
+    @JsonProperty("message-text")
+    public void setText(String text)
+    {
+        this.text = text;
     }
 
 }
