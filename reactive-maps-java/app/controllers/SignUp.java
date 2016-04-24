@@ -21,16 +21,16 @@ public class SignUp extends Controller{
 
         return ok(views.html.signup.render());
     }
-    public static Result Submit() throws SQLException
-    {
-//      DynamicForm formData = Form.form().bindFromRequest();
-      DynamicForm.Dynamic formData = Form.form().bindFromRequest().get();
-      Logger.debug("hello this is debugging" + formData.getData().toString());
-      Logger.info("Hello from the otter slide");
-      System.out.println("Hello from the otter sliiiiiiide.");
-      return redirect("/app"); 
-      
-    }
+//    public static Result Submit() throws SQLException
+//    {
+////      DynamicForm formData = Form.form().bindFromRequest();
+//      DynamicForm.Dynamic formData = Form.form().bindFromRequest().get();
+//      Logger.debug("hello this is debugging" + formData.getData().toString());
+//      Logger.info("Hello from the otter slide");
+//      System.out.println("Hello from the otter sliiiiiiide.");
+//      return redirect("/app"); 
+//      
+//    }
 
     public static Result Submit() throws SQLException
     {
