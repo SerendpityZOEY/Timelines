@@ -50,6 +50,11 @@
                     <div class="right-inner-addon">
                       <i class="fa fa-user"></i>
                       <input class="form-control input-lg" placeholder="First Name" name="first-name" type="text">
+                      @*
+                      @form(routes.Application.postIndex(), 'class -> "form-horizontal") {
+                        @helper.inputText(SignupForm("name"), '_label -> "Name", 'placeholder -> "My Name")
+                      }
+                      *@
                     </div><!-- /input-group -->
                   </div><!-- /.col-lg-6 -->
                   <div class="col-lg-6">

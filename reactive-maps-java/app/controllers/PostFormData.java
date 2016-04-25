@@ -1,4 +1,6 @@
-// Import required java libraries
+
+package controllers;
+
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;

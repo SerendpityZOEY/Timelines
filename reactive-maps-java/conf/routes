@@ -22,6 +22,17 @@ GET     /app/login                      controllers.Application.login()
 POST    /app/login                      controllers.Application.authenticate()
 GET     /app/logout                     controllers.Application.logout()
 
+# Edit Profile
+POST        /app/profileEdit          controllers.Profile.edit()
+
+# Not sure what Zoey wanted here
+POST        /app/otherentry     controllers.Timelines.Submit()
+
+# Authentication
+GET     /app/login                      controllers.Application.login()
+POST    /app/login                      controllers.Application.authenticate()
+GET     /app/logout                     controllers.Application.logout()
+
 # Static assets
 GET        /assets/*file        controllers.Assets.at(path="/public", file)
 
