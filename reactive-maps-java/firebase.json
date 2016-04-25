@@ -1,0 +1,8 @@
+{
+  "firebase": "timeplinesapp",
+  "public": "build",
+  "ignore": [
+    "firebase.json",
+    "**/.*"
+  ]
+}

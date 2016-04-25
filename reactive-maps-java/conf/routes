@@ -8,6 +8,9 @@ GET        /app                 controllers.Timelines.index()
 # Profile page
 GET        /app/profile         controllers.Profile.user_profile()
 
+# Stats page
+GET       /app/stats            controllers.Stats.index()
+
 # User Sign up page
 GET        /app/signup          controllers.SignUp.index()
 
