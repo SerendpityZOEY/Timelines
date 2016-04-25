@@ -17,6 +17,9 @@ POST        /app/signup          controllers.SignUp.Submit()
 # Create entry
 POST        /app/entry          controllers.Post.Submit()
 
+# Edit Profile
+POST        /app/profileEdit          controllers.Profile.edit()
+
 # Not sure what Zoey wanted here
 POST        /app/otherentry     controllers.Timelines.Submit()
 

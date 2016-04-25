@@ -4,6 +4,7 @@ import play.Logger;
 import play.data.DynamicForm;
 import play.data.Form;
 import play.mvc.*;
+import utils.CookieUtils;
 import models.*;
 
 import java.io.IOException;
@@ -14,6 +15,8 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
 public class Timelines extends Controller {
+    
+    private static final String COOKIE_NAME = "Posts";
 
     /**
      * The index page.
@@ -22,24 +25,18 @@ public class Timelines extends Controller {
      * @throws JsonMappingException 
      * @throws JsonParseException 
      */
-    public static Result index() throws SQLException, JsonParseException, JsonMappingException, IOException
-    {
-//        ArrayList<PostModel> posts = new ArrayList<PostModel>();
-//        PostModel p = new PostModel();
-//        posts.add(p);
-//        posts.add(p);
-//        posts.add(p);
-        
-        ArrayList<PostModel> posts = (ArrayList<PostModel>) Post.cookieToList(
-                "Posts", PostModel.class);
+    public static Result index() throws Exception
+    {        
+        ArrayList<PostModel> posts = (ArrayList<PostModel>) CookieUtils.cookieToList(
+                PostModel.class, request()
+                .cookie(COOKIE_NAME));
 
         return ok(views.html.index.render(posts));
     }
 
-    public static Result Submit() throws SQLException
+    public static Result Submit()
     {
-        ArrayList<PostModel> posts = new ArrayList<PostModel>();
-        //DynamicForm formData = Form.form().bindFromRequest();
+        ArrayList<PostModel> posts = new ArrayList<>();
         DynamicForm.Dynamic formData = Form.form().bindFromRequest().get();
         Logger.info("hello this is debugging" + formData.getData().toString());
         Logger.info("Heeeeeeeeeeeeey");
