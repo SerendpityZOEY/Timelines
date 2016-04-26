@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22c7937c-0868-463f-ae90-60f2fdd36d4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reactive-maps-java/app/controllers/Post.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reactive-maps-java/app/utils/CookieUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reactive-maps-java/app/views/UserFormData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/reactive-maps-java/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/controllers/Application.java" afterPath="$PROJECT_DIR$/reactive-maps-java/app/controllers/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/controllers/PostFormData.java" afterPath="$PROJECT_DIR$/reactive-maps-java/app/controllers/PostFormData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/controllers/Profile.java" afterPath="$PROJECT_DIR$/reactive-maps-java/app/controllers/Profile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/controllers/SignUp.java" afterPath="$PROJECT_DIR$/reactive-maps-java/app/controllers/SignUp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/controllers/Timelines.java" afterPath="$PROJECT_DIR$/reactive-maps-java/app/controllers/Timelines.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/models/PostModel.java" afterPath="$PROJECT_DIR$/reactive-maps-java/app/models/PostModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/models/User.java" afterPath="$PROJECT_DIR$/reactive-maps-java/app/models/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/models/UserInfo.java" afterPath="$PROJECT_DIR$/reactive-maps-java/app/models/UserInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/views/index.scala.html" afterPath="$PROJECT_DIR$/reactive-maps-java/app/views/index.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/views/main.scala.html" afterPath="$PROJECT_DIR$/reactive-maps-java/app/views/main.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/views/profile.scala.html" afterPath="$PROJECT_DIR$/reactive-maps-java/app/views/profile.scala.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/app/views/signup.scala.html" afterPath="$PROJECT_DIR$/reactive-maps-java/app/views/signup.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/conf/routes" afterPath="$PROJECT_DIR$/reactive-maps-java/conf/routes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive-maps-java/project/.sbtserver" afterPath="$PROJECT_DIR$/reactive-maps-java/project/.sbtserver" />
     </list>
     <ignored path="Timelines.iws" />
@@ -42,33 +27,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="profile.scala.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/profile.scala.html">
+      <file leaf-file-name="SignUp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/SignUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+            <state relative-caret-position="570">
+              <caret line="65" column="2" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/models/Task.java">
+      <file leaf-file-name="stats.scala.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/stats.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="313">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <marker date="1461578201811" expanded="true" signature="1493:1839" placeholder="..." />
+                <marker date="1461578201811" expanded="true" signature="1539:1838" placeholder="..." />
+                <marker date="1461578201811" expanded="true" signature="1587:1832" placeholder="..." />
+                <marker date="1461578201811" expanded="true" signature="3221:3625" placeholder="..." />
+                <marker date="1461578201811" expanded="true" signature="3287:3619" placeholder="..." />
+                <marker date="1461578201811" expanded="true" signature="3351:3613" placeholder="..." />
+                <marker date="1461578201811" expanded="true" signature="3540:3562" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/main.scala.html">
+      <file leaf-file-name="signup.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/signup.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="201" column="18" selection-start-line="201" selection-start-column="18" selection-end-line="201" selection-end-column="18" />
+            <state relative-caret-position="-2">
+              <caret line="96" column="60" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/book/src/apps/uber/client/data.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -103,23 +104,26 @@
         <option value="$PROJECT_DIR$/reactive-maps-java/app/controllers/Profile.java" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/views/main_jnet.scala.html" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/views/index_jnet.scala.html" />
-        <option value="$PROJECT_DIR$/reactive-maps-java/app/assets/stylesheets/styles.css" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/views/testMain.html" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/views/testMain.scala.html" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/views/testPost.scala.html" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/models/Task.java" />
-        <option value="$PROJECT_DIR$/reactive-maps-java/conf/routes" />
-        <option value="$PROJECT_DIR$/reactive-maps-java/app/views/signup.scala.html" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/models/Post.java" />
-        <option value="$PROJECT_DIR$/reactive-maps-java/app/controllers/SignUp.java" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/controllers/Application.java" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/controllers/PostFormData.java" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/controllers/Timelines.java" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/models/User.java" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/models/UserInfo.java" />
-        <option value="$PROJECT_DIR$/reactive-maps-java/app/views/index.scala.html" />
+        <option value="$PROJECT_DIR$/reactive-maps-java/conf/application.conf" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/views/main.scala.html" />
+        <option value="$PROJECT_DIR$/reactive-maps-java/app/controllers/Stats.java" />
         <option value="$PROJECT_DIR$/reactive-maps-java/app/views/profile.scala.html" />
+        <option value="$PROJECT_DIR$/reactive-maps-java/app/views/index.scala.html" />
+        <option value="$PROJECT_DIR$/reactive-maps-java/conf/routes" />
+        <option value="$PROJECT_DIR$/reactive-maps-java/app/assets/stylesheets/styles.css" />
+        <option value="$PROJECT_DIR$/reactive-maps-java/app/controllers/SignUp.java" />
+        <option value="$PROJECT_DIR$/reactive-maps-java/app/views/signup.scala.html" />
+        <option value="$PROJECT_DIR$/reactive-maps-java/app/views/stats.scala.html" />
       </list>
     </option>
   </component>
@@ -130,9 +134,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="53" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1313" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -159,6 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,42 +193,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="reactive-maps-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reactive-maps-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timelines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reactive-maps-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,14 +300,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../play2torial/app/controllers/Application.java" />
+    <property name="last_opened_file_path" value="$USER_HOME$/book/src/apps/uber/client/data.jsx" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -921,15 +889,17 @@
       <workItem from="1460966763463" duration="3974000" />
       <workItem from="1461007799183" duration="23292000" />
       <workItem from="1461274064524" duration="27389000" />
-      <workItem from="1461559742805" duration="798000" />
+      <workItem from="1461559742805" duration="16951000" />
+      <workItem from="1461577195014" duration="1582000" />
+      <workItem from="1461637810185" duration="6157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113435000" />
+    <option name="totallyTimeSpent" value="137327000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="24" width="1313" height="744" extended-state="6" />
+    <frame x="53" y="-4" width="1313" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -942,7 +912,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25971058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30007616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -976,42 +946,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/book/src/apps/resume/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/models/backend/RegionId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/models/backend/RegionPoints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/models/backend/PointOfInterest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/models/backend/BoundingBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/backend/Post.java" />
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/models/backend/LatLng.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1048,24 +982,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/backend/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/view.scala.html" />
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/assets/stylesheets/main.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/conf/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1438">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -1091,31 +1011,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/Profile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/main_jnet.scala.html" />
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/index_jnet.scala.html" />
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/testMain.scala.html" />
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/testPost.scala.html" />
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/JavaApplicationDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/assets/stylesheets/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Timelines/reactive-maps-java/app/controllers/Timelines.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1179,20 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/signup.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/sql/userInfo.sql" />
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/sql/post.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -1209,69 +1094,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/PostFormData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/SignUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/Timelines.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="51" column="67" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#578#579#0" expanded="false" />
-            <element signature="e#599#600#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/conf/bots/2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/conf/bots/1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/backend/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/models/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="-781">
           <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/index.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2034">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        <state relative-caret-position="432">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/assets/stylesheets/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="337" column="22" selection-start-line="337" selection-start-column="22" selection-end-line="337" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1280,25 +1162,128 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/main.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="201" column="18" selection-start-line="201" selection-start-column="18" selection-end-line="201" selection-end-column="18" />
+        <state relative-caret-position="18">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/PostFormData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/JavaApplicationDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/Stats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#132#133#0" expanded="false" />
+            <element signature="e#184#185#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/Timelines.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="51" column="67" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/book/src/apps/uber/client/data.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/signup.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="96" column="60" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/profile.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+        <state relative-caret-position="194">
+          <caret line="176" column="35" selection-start-line="176" selection-start-column="29" selection-end-line="176" selection-end-column="35" />
+          <folding>
+            <marker date="1461571461995" expanded="true" signature="10682:11202" placeholder="..." />
+            <marker date="1461571461995" expanded="true" signature="10738:11196" placeholder="..." />
+            <marker date="1461571461995" expanded="true" signature="10792:11190" placeholder="..." />
+            <marker date="1461571461995" expanded="true" signature="10974:11151" placeholder="..." />
+            <marker date="1461571461995" expanded="true" signature="11206:11232" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/controllers/SignUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="65" column="2" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactive-maps-java/app/views/stats.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <marker date="1461578201811" expanded="true" signature="1493:1839" placeholder="..." />
+            <marker date="1461578201811" expanded="true" signature="1539:1838" placeholder="..." />
+            <marker date="1461578201811" expanded="true" signature="1587:1832" placeholder="..." />
+            <marker date="1461578201811" expanded="true" signature="3221:3625" placeholder="..." />
+            <marker date="1461578201811" expanded="true" signature="3287:3619" placeholder="..." />
+            <marker date="1461578201811" expanded="true" signature="3351:3613" placeholder="..." />
+            <marker date="1461578201811" expanded="true" signature="3540:3562" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

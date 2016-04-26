@@ -42,7 +42,8 @@
         <div class="tab-content">
           <div class="tab-pane fade in active" id="new">
             <br>  
-		<form action="/app/signup" method="post">
+		<!--<form action="/app/signup" method="post">-->
+		<form>
 			<fieldset>
               <div class="form-group">
                 <div class="row">
@@ -146,6 +147,52 @@
               autoclose: true,
             })
           })
+  </script>
+
+  <script>
+          var Ref = new Firebase('https://timelinesapp.firebaseio.com/Users')
+          var lat = city_location.lat + radius * (Math.random() - 0.5) * 2
+          var lon = city_location.lon + radius * (Math.random() - 0.5) * 2
+          var data = {
+            center: [lat, lon], //
+            user: null
+          }
+          $('#signup').on('click', function (e) {
+            login()
+          }
+          function login(){
+
+            Ref.authWithOAuthPopup("github", function(error, authData){
+
+              // handle the result of the authentication
+              if (error) {
+                console.log("Login Failed!", error);
+              } else {
+                console.log("Authenticated successfully with payload:", authData);
+
+                // create a user object based on authData
+                var user = {
+                  displayName: authData.github.displayName,
+                  username: authData.github.username,
+                  id: authData.github.id,
+                  status: 'online',
+                  pos: data.center  // position, default to the map center
+                }
+
+                var userRef = Ref.child('users').child(user.username)
+
+                // subscribe to the user data
+                userRef.on('value', function(snapshot){
+                  data.user = snapshot.val()
+                })
+
+                // set the user data
+                userRef.set(user)
+
+              }
+            })
+
+          }
   </script>
 
 }
