@@ -28,9 +28,9 @@
       <div class="col-md-9">
       <select class="filter" id="filter">
           <option value="" disabled selected>Choose Tag</option>
-          <option value="1">Sad</option>
-          <option value="2">Peace</option>
-          <option value="3">Happy</option>
+          <option value="sad">Sad</option>
+          <option value="peace">Peace</option>
+          <option value="happy">Happy</option>
       </select>
           <div class="row" id="posts"></div>
       </div>
@@ -92,7 +92,7 @@
               if (item.tag == null) {
                   tag = "None"
               } else {
-                  tag = {"1":"sad","2":"peace","3":"happy"}[item.tag]
+                  tag = {"sad":"sad","peace":"peace","happy":"happy"}[item.tag]
               }
                   //console.log('see tag',select_tag)
                   var card;
