@@ -1,0 +1,10 @@
+CREATE TABLE `friends`(
+    `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `user1` int(10) UNSIGNED NOT NULL,
+    `user2` int(10) UNSIGNED NOT NULL,
+    `friendsSince` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    PRIMARY key(`id`),
+    UNIQUE KEY(`user1`,`user2`)
+    CONSTRAINT `friends_ibfk_1` FOREIGN KEY (`user1`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT `friends_ibfk_2` FOREIGN KEY (`user2`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+);

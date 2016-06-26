@@ -1,0 +1,15 @@
+oomariadb:
+    image: mariadb:10.0.22
+    container_name: oomariadb
+    ports:
+        - 3306:3306
+    environment:
+        - MYSQL_DATABASE=timelines
+        - MYSQL_USER=playdbuser
+        - MYSQL_PASSWORD=playdbuserpw
+        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+        - TERM=dumb
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d/
+    working_dir: /docker-entrypoint-initdb.d/
+
