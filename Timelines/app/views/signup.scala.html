@@ -1,0 +1,198 @@
+
+@main{
+  <!-- first section - Home -->
+  <div id="home" class="home">
+    <div class="text-vcenter">
+      <h1>Timelines</h1>
+    </div>
+  </div>
+    <!-- /first section -->
+
+  <div class="container sign-in-up">
+    <div class="row">
+
+      <div class="col-md-8">
+        <h3 class="text-center">How to Use</h3>
+        <p id="how-to-use">
+          <b>Description:</b> This is a personal journaling web app that allows a user to view life events and
+          changes as time series graphs. Users can make quick entries to track life events, thoughts, and
+          mood using tags, images, and text. These entries can also be shared with other users.
+          <br><b>Description:</b> This is a personal journaling web app that allows a user to view life events and
+          changes as time series graphs. Users can make quick entries to track life events, thoughts, and
+          mood using tags, images, and text. These entries can also be shared with other users.
+          <br><b>Description:</b> This is a personal journaling web app that allows a user to view life events and
+          changes as time series graphs. Users can make quick entries to track life events, thoughts, and
+          mood using tags, images, and text. These entries can also be shared with other users.
+          <br><b>Description:</b> This is a personal journaling web app that allows a user to view life events and
+          changes as time series graphs. Users can make quick entries to track life events, thoughts, and
+          mood using tags, images, and text. These entries can also be shared with other users.
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <br>
+          <!-- Nav tabs -->
+        <div class="text-center">
+          <div class="btn-group">
+            <a href="#new" role="tab" data-toggle="tab" class="big btn btn-default"><i class="fa fa-plus"></i> New User</a>
+            <a href="#user" role="tab" data-toggle="tab" class="big btn btn-primary"><i class="fa fa-user"></i> I have account</a>
+          </div>
+        </div>
+        <p class="click2select">Click to select</p>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="new">
+            <br>  
+		<!--<form action="/app/signup" method="post">-->
+		<form>
+			<fieldset>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="right-inner-addon">
+                      <i class="fa fa-user"></i>
+                      <input class="form-control input-lg" placeholder="First Name" name="first-name" type="text">
+                      @*
+                      @form(routes.Application.postIndex(), 'class -> "form-horizontal") {
+                        @helper.inputText(SignupForm("name"), '_label -> "Name", 'placeholder -> "My Name")
+                      }
+                      *@
+                    </div><!-- /input-group -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6">
+                    <div class="right-inner-addon">
+                      <i class="fa fa-user"></i>
+                      <input class="form-control input-lg" placeholder="Last Name" name="last-name" type="text">
+                    </div><!-- /input-group -->
+                  </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+              </div>
+
+              <div class="form-group">
+                <div class="right-inner-addon">
+                  <i class="fa fa-envelope"></i>
+                  <input class="form-control input-lg" placeholder="Email Address" name="email" type="text">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="right-inner-addon">
+                  <i class="fa fa-key"></i>
+                  <input class="form-control input-lg" placeholder="Password" name="password" type="password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="right-inner-addon">
+                  <i class="fa fa-key"></i>
+                  <input class="form-control input-lg" placeholder="Confirm Password" id="" name="password-confirm" type="password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="right-inner-addon">
+                  <i class="fa fa-calendar"></i>
+                  <input class="form-control input-lg" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+                </div>
+              </div>
+            </fieldset>
+            <div class=" text-center">
+              <button class="btn btn-success" value="signup">Sign Up</button>
+            </div>
+            </form>
+          </div>
+		
+          <div class="tab-pane fade" id="user">
+            <br>
+            <form action="/app/login" method="post">
+            <fieldset>
+              <div class="form-group">
+                <div class="right-inner-addon">
+                  <i class="fa fa-envelope"></i>
+                  <input class="form-control input-lg" name="email_address" placeholder="Email Address" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="right-inner-addon">
+                  <i class="fa fa-key"></i>
+                  <input class="form-control input-lg" name="password" placeholder="Password" type="password">
+                </div>
+              </div>
+            </fieldset>
+            <br>
+            <div class=" text-center">
+              <button class="btn btn-success">Login</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <!--formden.js communicates with FormDen server to validate fields and submit via AJAX -->
+  <script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
+    <!--Font Awesome (added because you use icons in your prepend/append)-->
+  <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <!-- Include Date Range Picker -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+  <script>
+          $(document).ready(function(){
+            var date_input=$('input[name="date"]'); //our date input has the name "date"
+            //var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+            date_input.datepicker({
+              format: 'mm/dd/yyyy',
+              //container: container,
+              todayHighlight: true,
+              autoclose: true,
+            })
+          })
+  </script>
+
+  <script>
+          var Ref = new Firebase('https://timelinesapp.firebaseio.com/Users')
+          var lat = city_location.lat + radius * (Math.random() - 0.5) * 2
+          var lon = city_location.lon + radius * (Math.random() - 0.5) * 2
+          var data = {
+            center: [lat, lon], //
+            user: null
+          }
+          $('#signup').on('click', function (e) {
+            login()
+          }
+          function login(){
+
+            Ref.authWithOAuthPopup("github", function(error, authData){
+
+              // handle the result of the authentication
+              if (error) {
+                console.log("Login Failed!", error);
+              } else {
+                console.log("Authenticated successfully with payload:", authData);
+
+                // create a user object based on authData
+                var user = {
+                  displayName: authData.github.displayName,
+                  username: authData.github.username,
+                  id: authData.github.id,
+                  status: 'online',
+                  pos: data.center  // position, default to the map center
+                }
+
+                var userRef = Ref.child('users').child(user.username)
+
+                // subscribe to the user data
+                userRef.on('value', function(snapshot){
+                  data.user = snapshot.val()
+                })
+
+                // set the user data
+                userRef.set(user)
+
+              }
+            })
+
+          }
+  </script>
+
+}
