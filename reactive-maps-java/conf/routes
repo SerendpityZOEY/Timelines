@@ -8,6 +8,9 @@ GET        /app                 controllers.Timelines.index()
 # Profile page
 GET        /app/profile         controllers.Profile.user_profile()
 
+# Stats page
+GET       /app/stats            controllers.Stats.index()
+
 # User Sign up page
 GET        /app/signup          controllers.SignUp.index()
 
@@ -15,7 +18,15 @@ GET        /app/signup          controllers.SignUp.index()
 POST        /app/signup          controllers.SignUp.Submit()
 
 # Create entry
-POST        /app/entry          controllers.Post.Submit()
+POST        /app/entry          controllers.Timelines.Submit()
+
+# Authentication
+GET     /app/login                      controllers.Application.login()
+POST    /app/login                      controllers.Application.authenticate()
+GET     /app/logout                     controllers.Application.logout()
+
+# Edit Profile
+POST        /app/profileEdit          controllers.Profile.edit()
 
 # Not sure what Zoey wanted here
 POST        /app/otherentry     controllers.Timelines.Submit()

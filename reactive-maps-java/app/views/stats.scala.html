@@ -1,0 +1,112 @@
+
+@main{
+  <!-- first section - Home -->
+  <div id="home" class="home">
+    <div class="text-vcenter">
+      <h1>Timelines</h1>
+      <div class="StreamsHero-buttonContainer">
+        <a class="Button StreamsSignUp js-nav js-signup" data-component="hero" data-element="buttons" href="@routes.Timelines.index()">Log out</a>
+      </div>
+    </div>
+  </div>
+    <!-- /first section -->
+
+  <ul class="nav nav-pills nav-justified">
+    <li role="presentation"><a href="@routes.Timelines.index()">Home</a></li>
+    <li role="presentation"><a href="@routes.Profile.user_profile()">Profile</a></li>
+    <li role="presentation"><a href="#">Friends</a></li>
+    <li role="presentation" class="active"><a href="#">Stats</a></li>
+  </ul>
+  <div id="br-line"></div>
+
+
+  <div class="container">
+      <div class="col-md-3">
+    <div class="row" id="info">
+      </div>
+          </div>
+      <div class="col-md-9">
+      <select class="filter" id="filter">
+          <option value="" disabled selected>Choose Tag</option>
+          <option value="sad">Sad</option>
+          <option value="peace">Peace</option>
+          <option value="happy">Happy</option>
+      </select>
+          <div class="row" id="posts"></div>
+      </div>
+  </div>
+
+  <br>
+  <br>
+
+  <script>
+
+
+          var UserRef = new Firebase('https://timelinesapp.firebaseio.com/Users')
+
+          var Info = function(snapshot) {
+            var obj = snapshot.val()
+              //console.log('see',obj)
+              var card;
+
+              card =
+                      '<div class="thumbnail">' +
+                      '<div class="caption">' +
+                      '<h3>' + 'Followers' + '</h3>' +
+                      '<p>' + obj.followers + '</p>' +
+                      '<h3>' + 'Posts' + '</h3>' +
+                      '<p>' + obj.posts + '</p>' +
+                      '</div></div>';
+
+
+              $('#info').append(card);
+          };
+          UserRef.on('value', Info);
+
+
+
+          var taskListRef = new Firebase('https://timelinesapp.firebaseio.com/Posts')
+          //var select_tag = document.getElementById('filter').value
+          $(document).ready(function(){
+              $('#filter').change(function(){
+                  var select_tag = $(".filter option:selected").val();
+                  console.log('see tag',select_tag)
+                  taskListRef.on("value", function(snapshot) {
+                      var list = snapshot.val()
+                      $('#posts').empty()
+                      for (key in list) {
+                          var item = list[key]
+                          if (select_tag == "0") {}
+                          else if (item.tag != select_tag) {
+                              continue;
+                          }
+                          fill_container(item)
+                      }
+                  })
+              });
+          });
+
+
+
+          function fill_container(item) {
+              if (item.tag == null) {
+                  tag = "None"
+              } else {
+                  tag = {"sad":"sad","peace":"peace","happy":"happy"}[item.tag]
+              }
+                  //console.log('see tag',select_tag)
+                  var card;
+                              card =  '<div class="col-sm-6 col-md-4">' +
+                                      '<div class="thumbnail">' +
+                                      '<div class="caption">' +
+                                      '<h3>' + item.username + '</h3>' +
+                                      '<p>' + item.message + '</p>' +
+                                      '<b>'+ 'Tag: ' + '</b>' + tag +
+                                      '</div></div></div>';
+                              $('#posts').append(card);
+
+          }
+
+  </script>
+
+}

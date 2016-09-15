@@ -1,4 +1,5 @@
 package controllers;
+
 import play.*;
 import play.mvc.*;
 import play.Logger;
@@ -69,3 +70,4 @@ public class Application extends Controller {
         );
     }
 }
+

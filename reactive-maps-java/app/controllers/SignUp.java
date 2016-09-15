@@ -21,6 +21,7 @@ public class SignUp extends Controller{
 
         return ok(views.html.signup.render());
     }
+
 //    public static Result Submit() throws SQLException
 //    {
 ////      DynamicForm formData = Form.form().bindFromRequest();
@@ -32,6 +33,7 @@ public class SignUp extends Controller{
 //      
 //    }
 
+
     public static Result Submit() throws SQLException
     {
         //DynamicForm formData = Form.form().bindFromRequest();
@@ -40,6 +42,7 @@ public class SignUp extends Controller{
         Logger.info("Hello from the otter slide");
         System.out.println("Hello from the otter sliiiiiiide.");
         //return redirect(controllers.Timelines.index().toString());
+        /*
         JavaApplicationDatabase db = new JavaApplicationDatabase();
 
         Connection conn = db.getCxn();
@@ -60,7 +63,7 @@ public class SignUp extends Controller{
         rs.close();
         stmt.close();
         conn.close();
-
+*/
         return redirect("/app");
 
     }
